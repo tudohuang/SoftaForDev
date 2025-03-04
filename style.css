@@ -1,0 +1,275 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #121212;
+    color: #E4E4E4;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* 導航欄 */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background: #1A1A1A;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: 600;
+    color: #00BFFF;
+}
+
+.nav-links a {
+    color: #E4E4E4;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 14px;
+}
+
+.nav-links a:hover {
+    color: #00BFFF;
+}
+
+/* 首頁 Hero 區 */
+.hero {
+    padding: 80px 5%;
+    background: linear-gradient(135deg, #1A1A1A, #222);
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #A0A0A0;
+    margin-bottom: 20px;
+}
+
+/* 搜尋區 */
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#search {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 6px;
+    background-color: #25272A;
+    color: #E4E4E4;
+    border: 1px solid #444;
+}
+
+#search-btn {
+    background: #00BFFF;
+    color: white;
+    border: none;
+    padding: 12px;
+    margin-left: 5px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#search-btn:hover {
+    background: #009ACD;
+}
+
+/* 軟體分類 */
+.categories {
+    padding: 40px 5%;
+    background: #181A1B;
+}
+
+.category-list {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.category-btn {
+    padding: 12px 20px;
+    background-color: #0078D7;
+    color: #FFF;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.category-btn i {
+    margin-right: 5px;
+}
+
+.category-btn:hover {
+    background-color: #005BB5;
+}
+
+/* 熱門軟體 */
+.popular {
+    padding: 40px 5%;
+}
+
+.popular h2 {
+    margin-bottom: 20px;
+}
+
+/* 頁腳 */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    background: #1A1A1A;
+    font-size: 14px;
+    color: #A0A0A0;
+}
+
+/* 限制卡片最大一行 4 個 */
+#popular-software, #software-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    max-width: 1200px; /* 限制寬度，避免超過畫面 */
+    margin: auto; /* 置中 */
+}
+
+/* 響應式設計 */
+@media (max-width: 1200px) {
+    #popular-software, #software-list {
+        grid-template-columns: repeat(3, 1fr); /* 變成 3 個一列 */
+    }
+}
+
+@media (max-width: 800px) {
+    #popular-software, #software-list {
+        grid-template-columns: repeat(2, 1fr); /* 變成 2 個一列 */
+    }
+}
+
+@media (max-width: 500px) {
+    #popular-software, #software-list {
+        grid-template-columns: repeat(1, 1fr); /* 變成 1 個一列 */
+    }
+}
+
+/* 卡片樣式 */
+.software-item {
+    background: #25272A;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    border-left: 4px solid #00A8E8;
+    max-width: 280px; /* 限制最大寬度 */
+    min-height: 320px; /* 設定最小高度，確保所有卡片一致 */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* 讓內容平均分佈 */
+}
+
+/* 確保所有 logo 一致大小 */
+.software-logo {
+    width: 100px; /* 限制寬度 */
+    height: 100px; /* 限制高度，避免大小不一 */
+    object-fit: contain; /* 確保圖片完整顯示 */
+    margin-bottom: 10px;
+}
+
+/* 標題 & 內容區 */
+.software-item h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #FFD700;
+    margin-bottom: 8px;
+}
+
+/* 軟體描述 */
+.software-item p {
+    font-size: 14px;
+    color: #A0A0A0;
+    flex-grow: 1; /* 讓內容填滿 */
+    margin-bottom: 10px;
+}
+
+/* 讓按鈕水平排列並有間隔 */
+.software-item .button-group {
+    display: flex;
+    justify-content: center; /* 讓按鈕水平置中 */
+    gap: 10px; /* 設定按鈕間距 */
+    margin-top: 10px;
+}
+
+/* 讓按鈕的外觀更好 */
+.software-item a {
+    display: inline-block;
+    padding: 8px 12px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #1E1E2F;
+    background-color: #FFD700;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+    min-width: 80px; /* 讓按鈕大小一致 */
+    text-align: center;
+}
+
+/* 按鈕懸停效果 */
+.software-item a:hover {
+    background-color: #E6C300;
+}
+
+/* 主題切換按鈕 */
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #FFD700;
+    color: #1E1E2F;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.theme-toggle:hover {
+    background: #E6C300;
+}
+
+/* 深色模式 */
+[data-theme="dark"] {
+    --bg-color: #1E1E2F;
+    --text-color: #E4E4E4;
+    --card-bg: #25272A;
+    --card-border: #3A3D40;
+    --button-bg: #FFD700;
+    --button-text: #1E1E2F;
+}
+
+/* 淺色模式 */
+[data-theme="light"] {
+    --bg-color: #ffffff;
+    --text-color: #1E1E2F;
+    --card-bg: #f9f9f9;
+    --card-border: #e0e0e0;
+    --button-bg: #FFD700;
+    --button-text: #1E1E2F;
+}

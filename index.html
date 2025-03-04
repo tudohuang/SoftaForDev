@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>軟體下載中心</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/></head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Software Hub</div>
+        <div class="nav-links">
+            <a href="#">首頁</a>
+            <a href="#">所有軟體</a>
+            <a href="#">關於</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1>專業軟體下載平台</h1>
+        <p>提供最快速、最安全的軟體下載，讓您的工作更加高效</p>
+        <div class="search-container">
+            <input type="text" id="search" placeholder="搜尋軟體，例如 VS Code, Python">
+            <button id="search-btn"><i class="fas fa-search"></i></button>
+        </div>
+    </header>
+
+    <section class="categories">
+        <h2>探索軟體類別</h2>
+        <div class="category-list">
+            <button class="category-btn" onclick="goToCategory('開發工具')"><i class="fas fa-code"></i> 開發工具</button>
+            <button class="category-btn" onclick="goToCategory('多媒體')"><i class="fas fa-video"></i> 多媒體</button>
+            <button class="category-btn" onclick="goToCategory('系統工具')"><i class="fas fa-cogs"></i> 系統工具</button>
+        </div>
+    </section>
+
+    <section class="popular">
+        <h2>熱門軟體</h2>
+        <div id="popular-software"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Software Hub - All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
