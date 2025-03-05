@@ -76,9 +76,13 @@ document.addEventListener("DOMContentLoaded", () => {
     // 搜尋功能
     searchBtn.addEventListener("click", () => {
         const query = searchInput.value.trim();
-        if (query) {
+        if (query.toLowerCase() === "all") {
+            // 直接跳轉到 category.html，不帶搜尋參數
+            window.location.href = "category.html";
+        } else if (query) {
             window.location.href = `category.html?search=${query}`;
         }
+        
     });
 
     searchInput.addEventListener("keypress", (e) => {

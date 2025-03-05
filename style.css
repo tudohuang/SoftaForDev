@@ -3,8 +3,8 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    background-color: #121212;
-    color: #E4E4E4;
+    background-color: #e0e0e0;
+    color: #000000;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -16,20 +16,21 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 15px 5%;
-    background: #1A1A1A;
+    background: #f5f5f5;
 }
 
 .logo {
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 600;
-    color: #00BFFF;
+    color: #0084ff;
 }
 
 .nav-links a {
-    color: #E4E4E4;
+    color: #030303;
+    font-weight: bold;
     text-decoration: none;
     margin: 0 10px;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .nav-links a:hover {
@@ -39,7 +40,7 @@ body {
 /* 首頁 Hero 區 */
 .hero {
     padding: 80px 5%;
-    background: linear-gradient(135deg, #1A1A1A, #222);
+    background: #e3f2fd;
     text-align: center;
 }
 
@@ -68,9 +69,9 @@ body {
     padding: 12px;
     font-size: 16px;
     border-radius: 6px;
-    background-color: #25272A;
-    color: #E4E4E4;
-    border: 1px solid #444;
+    background-color: #ffffff;
+    color: #0e0e0e;
+    border: 1px solid #2ea8c7;
 }
 
 #search-btn {
@@ -90,7 +91,7 @@ body {
 /* 軟體分類 */
 .categories {
     padding: 40px 5%;
-    background: #181A1B;
+    background: linear-gradient(90deg, #54d4ff 0%, #008cff 100%);
 }
 
 .category-list {
@@ -169,7 +170,7 @@ footer {
 
 /* 卡片樣式 */
 .software-item {
-    background: #25272A;
+    background: #ffffff;
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -195,7 +196,7 @@ footer {
 .software-item h2 {
     font-size: 18px;
     font-weight: 600;
-    color: #FFD700;
+    color: #0077ff;
     margin-bottom: 8px;
 }
 
@@ -235,41 +236,31 @@ footer {
     background-color: #E6C300;
 }
 
-/* 主題切換按鈕 */
-.theme-toggle {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    background: #FFD700;
+
+/* 跑馬燈外框 */
+.marquee-container {
+    overflow: hidden;
     color: #1E1E2F;
-    padding: 8px 16px;
-    border-radius: 8px;
+    padding: 10px 0;
+    font-size: 16px;
     font-weight: bold;
-    border: none;
-    cursor: pointer;
-    transition: background 0.3s ease;
+    white-space: nowrap;
+    position: relative;
 }
 
-.theme-toggle:hover {
-    background: #E6C300;
+/* 內部內容滾動效果 */
+.marquee {
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee-scroll 12s linear infinite;
 }
 
-/* 深色模式 */
-[data-theme="dark"] {
-    --bg-color: #1E1E2F;
-    --text-color: #E4E4E4;
-    --card-bg: #25272A;
-    --card-border: #3A3D40;
-    --button-bg: #FFD700;
-    --button-text: #1E1E2F;
-}
-
-/* 淺色模式 */
-[data-theme="light"] {
-    --bg-color: #ffffff;
-    --text-color: #1E1E2F;
-    --card-bg: #f9f9f9;
-    --card-border: #e0e0e0;
-    --button-bg: #FFD700;
-    --button-text: #1E1E2F;
+/* 動畫：從右往左移動 */
+@keyframes marquee-scroll {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
 }

@@ -489,14 +489,14 @@
         "name": "FreeRTOS",
         "category": "嵌入式開發",
         "description": "適用於微控制器的開源即時作業系統 (RTOS)。",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/0/0d/FreeRTOS_logo.svg",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Logo_freeRTOS.png",
         "website": "https://www.freertos.org/"
     },
     {
         "name": "SDL",
         "category": "遊戲開發",
         "description": "跨平台遊戲開發庫，適用於 2D / 3D 遊戲。",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/5/5a/SDL_logo.png",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/1/16/Simple_DirectMedia_Layer%2C_Logo.svg",
         "website": "https://www.libsdl.org/"
     },
     {
@@ -508,22 +508,6 @@
     },
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         {
             "name": "PuTTY",
             "category": "系統工具",
@@ -531,6 +515,111 @@
             "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/PuTTY_Icon_upstream.svg/1200px-PuTTY_Icon_upstream.svg.png",
             "website": "https://www.chiark.greenend.org.uk/~sgtatham/putty/",
             "download": "https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html"
+        },
+        {
+            "name": "LaTeX",
+            "category": "數學 / 科學工具",
+            "description": "強大的排版系統，適用於學術論文與技術文件。",
+            "logo": "https://upload.wikimedia.org/wikipedia/commons/9/92/LaTeX_logo.svg",
+            "website": "https://www.latex-project.org/"
+        },
+        {
+            "name": "Overleaf",
+            "category": "數學 / 科學工具",
+            "description": "雲端 LaTeX 編輯器，適用於學術論文協作。",
+            "logo": "https://images.ctfassets.net/nrgyaltdicpt/3nesOc6iRhdzatUCC5OKWo/ea0fc03647a5f6a903a9aacc357481b2/overleaf-o-logo-primary.jpg",
+            "website": "https://www.overleaf.com/"
+        },
+        {
+            "name": "arXiv",
+            "category": "數學 / 科學工具",
+            "description": "免費的學術論文預印本庫，涵蓋物理、數學、AI 研究。",
+            "logo": "https://upload.wikimedia.org/wikipedia/commons/7/7a/ArXiv_logo_2022.png",
+            "website": "https://arxiv.org/"
+        },
+        {
+            "name": "Sigil",
+            "category": "文書與出版工具",
+            "description": "開源 EPUB 電子書編輯器，適用於電子書製作。",
+            "logo": "https://sigil-ebook.com/assets/images/sigil-512.png",
+            "website": "https://sigil-ebook.com/"
+        },
+        {
+            "name": "Discord",
+            "category": "社群工具",
+            "description": "熱門即時通訊平台，適用於遊戲、開發者社群。",
+            "logo": "https://images-eds-ssl.xboxlive.com/image?url=4rt9.lXDC4H_93laV1_eHHFT949fUipzkiFOBH3fAiZZUCdYojwUyX2aTonS1aIwMrx6NUIsHfUHSLzjGJFxxsG72wAo9EWJR4yQWyJJaDb6rYcBtJvTvH3UoAS4JFNDaxGhmKNaMwgElLURlRFeVkLCjkfnXmWtINWZIrPGYq0-&format=source",
+            "website": "https://discord.com/"
+        },
+        {
+            "name": "Slack",
+            "category": "社群工具",
+            "description": "適用於團隊協作與開發者社群的即時通訊工具。",
+            "logo": "https://upload.wikimedia.org/wikipedia/commons/7/76/Slack_Icon.png",
+            "website": "https://slack.com/"
+        },
+        {
+            "name": "Audacity",
+            "category": "多媒體工具",
+            "description": "開源音訊編輯軟體，適用於錄音與音訊處理。",
+            "logo": "https://images-eds-ssl.xboxlive.com/image?url=4rt9.lXDC4H_93laV1_eHHFT949fUipzkiFOBH3fAiZZUCdYojwUyX2aTonS1aIwMrx6NUIsHfUHSLzjGJFxxseQJV573Uwugf0POF9I45CxYkDTe9L9RpBQ0NviXnyGtveCxdSwzcWHn8q6VdXAjJYtSJdpsx8zzt0MgOW6boc-&format=source",
+            "website": "https://www.audacityteam.org/"
+        },
+        {
+            "name": "PowerShell",
+            "category": "系統工具",
+            "description": "微軟的命令列工具，適用於自動化與系統管理。",
+            "logo": "https://upload.wikimedia.org/wikipedia/commons/2/2f/PowerShell_5.0_icon.png",
+            "website": "https://learn.microsoft.com/en-us/powershell/"
+        },
+        {
+            "name": "Ubuntu",
+            "category": "作業系統",
+            "description": "最受歡迎的 Linux 發行版，適用於開發與伺服器應用。",
+            "logo": "https://imtranslationweb.com/media/k2/items/cache/181bbfa794e218f5cd90439ff3dd1578_L.jpg",
+            "website": "https://ubuntu.com/"
+        },
+        {
+            "name": "Debian",
+            "category": "作業系統",
+            "description": "穩定性極高的 Linux 發行版，適用於伺服器與嵌入式系統。",
+            "logo": "https://upload.wikimedia.org/wikipedia/commons/6/66/Openlogo-debianV2.svg",
+            "website": "https://www.debian.org/"
+        },
+        {
+            "name": "Arch Linux",
+            "category": "作業系統",
+            "description": "極簡滾動更新 Linux 發行版，適合進階使用者。",
+            "logo": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Archlinux-logo-standard-version.png",
+            "website": "https://archlinux.org/"
+        },
+        {
+            "name": "Xcode",
+            "category": "開發工具",
+            "description": "Apple 官方的 iOS / macOS 開發環境，內建 Swift、Objective-C 支援。",
+            "logo": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/59/05/ea/5905eaa1-334a-549c-931f-81f30777d6f4/Xcode-85-220-0-4-2x-sRGB.png/1200x630bb.png",
+            "website": "https://developer.apple.com/xcode/"
+        },
+        {
+            "name": "Visual Studio",
+            "category": "開發工具",
+            "description": "微軟的全功能開發環境，支援 C#、C++、Python。",
+            "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Visual_Studio_Icon_2022.svg/1200px-Visual_Studio_Icon_2022.svg.png",
+            "website": "https://visualstudio.microsoft.com/"
+        },
+        {
+            "name": "IntelliJ IDEA",
+            "category": "開發工具",
+            "description": "JetBrains 出品的專業 Java / Kotlin IDE。",
+            "logo": "https://resources.jetbrains.com/storage/products/intellij-idea/img/meta/intellij-idea_logo_300x300.png",
+            "website": "https://www.jetbrains.com/idea/"
+        },
+        {
+            "name": "Eclipse",
+            "category": "開發工具",
+            "description": "開源 Java / C++ 開發環境，支援多種插件擴展。",
+            "logo": "https://www.iri.com/blog/wp-content/uploads/2012/06/eclipse-logo.png",
+            "website": "https://www.eclipse.org/"
         }
 
     
