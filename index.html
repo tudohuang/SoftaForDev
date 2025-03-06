@@ -14,7 +14,7 @@
             flex-direction: column;
             background: #f0f0f0;
             font-family: Arial, sans-serif;
-            overflow: hidden;
+            /*overflow: hidden;*/
         }
         .navbar {
             display: flex;
@@ -117,7 +117,7 @@
             100% { transform: translateX(-100%); }
         }
         footer {
-            padding: 20px;
+            padding: 10px;
             text-align: center;
             background: #333;
             color: white;
@@ -171,6 +171,50 @@
                 width: 90%;
             }
         }
+        #callForAction {
+            align-items: center;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 10px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .cta-button:hover {
+            background-color: #0056b3;
+        }
+        .json-format {
+            align-items: center;
+            background-color: #f8f8f8;
+            padding: 15px;
+            border-radius: 5px;
+            text-align: left;
+            overflow-x: auto;
+            font-family: monospace;
+        }
+        ::-webkit-scrollbar {
+    width: 13px; /* 滾動條寬度 */
+}
+
+::-webkit-scrollbar-track {
+    background:rgb(255, 253, 253); /* 滾動條軌道背景色 */
+    border-radius: 10px; /* 滾動條軌道圓角 */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888; /* 滾動條顏色 */
+    border-radius: 10px; /* 滾動條圓角 */
+    border: 3px solid #f1f1f1; /* 滾動條邊框 */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #28b9dd /* 滾動條懸停顏色 */
+}
     </style>
 </head>
 <body>
@@ -215,7 +259,22 @@
         <!--<h2>熱門軟體</h2>-->
         <!--<div id="popular-software"></div>-->
     </section>
-
+    <section id="callForAction">
+        <h2>歡迎加入我們</h2>
+        <p>任何優秀的軟體、框架、網站、活動，歡迎放入以下連結的 <code>DataForPublic.json</code></p>
+        <a href="https://github.com/YourRepo/DataForPublic.json" target="_blank" class="cta-button">提交您的貢獻</a>
+        <pre class="json-format">
+{
+"name": "軟體名稱",
+"description": "軟體描述",
+"category": "軟體類別",
+"logo": "軟體Logo URL",
+"website": "官方網站 URL",
+"download": "下載連結 URL"
+}
+        </pre>
+    </section>
+<br><br>
     <footer>
         <p>© 2024 Software Hub - All Rights Reserved</p>
     </footer>

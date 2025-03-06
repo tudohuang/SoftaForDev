@@ -78,6 +78,24 @@
             from { transform: translateY(20px); opacity: 0; }
             to { transform: translateY(0); opacity: 1; }
         }
+        ::-webkit-scrollbar {
+    width: 12px; /* 滾動條寬度 */
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* 滾動條軌道背景色 */
+    border-radius: 10px; /* 滾動條軌道圓角 */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888; /* 滾動條顏色 */
+    border-radius: 10px; /* 滾動條圓角 */
+    border: 3px solid #f1f1f1; /* 滾動條邊框 */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* 滾動條懸停顏色 */
+}
     </style>
 </head>
 <body>
@@ -98,10 +116,9 @@
     <section class="about">
         <h2><i class="fas fa-book"></i> 目標</h2>
         <p>Software Hub 不是單純的軟體下載平台，而是一個開發者的知識與工具中心。我們希望讓開發者在不知道該查什麼時，來這裡就能找到 <strong>開發工具、技術活動、學習資源</strong>，甚至發現意想不到的新知識。</p>
-        <h2><i class="fas fa-bullseye"></i> 願景</h2>
-        <p>我們的目標是成為開發者的第一站，提供最全面的技術資訊與資源，讓學習與開發變得更高效、更輕鬆。</p>
+</p>
     </section>
-
+<br><br>
     <footer>
         <p>&copy; 2024 Software Hub - All Rights Reserved</p>
     </footer>
