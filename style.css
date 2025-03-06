@@ -27,7 +27,6 @@ body {
 
 .nav-links a {
     color: #030303;
-    font-weight: bold;
     text-decoration: none;
     margin: 0 10px;
     font-size: 16px;
@@ -91,7 +90,7 @@ body {
 /* 軟體分類 */
 .categories {
     padding: 40px 5%;
-    background: linear-gradient(90deg, #54d4ff 0%, #008cff 100%);
+    background: linear-gradient(rgba(0, 255, 238, 0.5), rgba(15, 72, 180, 0.5)), url('hero-bg.jpg');;
 }
 
 .category-list {

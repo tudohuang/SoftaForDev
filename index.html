@@ -14,24 +14,30 @@
             flex-direction: column;
             background: #f0f0f0;
             font-family: Arial, sans-serif;
-            overflow: hidden; /* 避免滾動條 */
+            overflow: hidden;
         }
         .navbar {
             display: flex;
             justify-content: space-between;
             padding: 10px 20px;
             background: #ffffff;
-            color: white;
+            color: rgb(0, 81, 255);
         }
         .nav-links a {
-            color: white;
+            color: rgb(0, 76, 255);
+            font-weight: bold;
             margin: 0 10px;
             text-decoration: none;
         }
         .hero {
             text-align: center;
             padding: 50px 20px;
-            background: #e0e0e0;
+    
+        }
+        .hero p{
+            font-size: 1.2rem;
+            margin-top: 10px;
+            color: black;
         }
         .search-container {
             display: flex;
@@ -169,12 +175,13 @@
 </head>
 <body>
     <nav class="navbar">
-        <div class="logo">Software Hub</div>
+        <div class="logo"><i class="fas fa-download"></i> Software Hub</div>
         <div class="nav-links">
-            <a href="#">首頁</a>
-            <a href="#">所有軟體</a>
-            <a href="#">關於</a>
+            <a href="index.html"><i class="fas fa-home"></i> 首頁</a>
+            <a href="category.html?query=all"><i class="fas fa-th"></i> 所有軟體</a>
+            <a href="about.html"><i class="fas fa-info-circle"></i> 關於</a>
         </div>
+    </nav>
     </nav>
 
     <header class="hero">
@@ -205,8 +212,8 @@
                 <p>🚀 最新推薦：VS Code, PyCharm, WebStorm, PlatformIO, ModelSim, Quartus Prime, TensorFlow！🔥</p>
             </div>
         </div>
-        <h2>熱門軟體</h2>
-        <div id="popular-software"></div>
+        <!--<h2>熱門軟體</h2>-->
+        <!--<div id="popular-software"></div>-->
     </section>
 
     <footer>
