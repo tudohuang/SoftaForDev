@@ -1,0 +1,65 @@
+[
+{
+    "name": "Google I/O",
+    "category": "開發者大會",
+    "description": "Google 開發者大會，涵蓋 AI、雲端、Android、Flutter。",
+    "logo": "https://io.google/2025/assets/images/Logo-white.svg",
+    "website": "https://io.google/",
+    "register": "https://io.google/events"
+}, 
+{
+    "name": "Microsoft Build",
+    "category": "開發者大會",
+    "description": "微軟開發者年度大會，聚焦於 .NET、Azure、VS Code。",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg",
+    "website": "https://build.microsoft.com/",
+    "register": "https://build.microsoft.com/register"
+}, 
+{
+    "name": "Apple WWDC",
+    "category": "開發者大會",
+    "description": "Apple 開發者大會，涵蓋 iOS、macOS、Xcode、Swift。",
+    "logo": "https://developer.apple.com/wwdc24/images/masthead-24.svg",
+    "website": "https://developer.apple.com/wwdc/",
+    "register": "https://developer.apple.com/wwdc/"
+},
+{
+    "name": "NVIDIA GTC",
+    "category": "開發者大會",
+    "description": "NVIDIA GPU 技術大會，聚焦 AI、深度學習、CUDA。",
+    "logo": "https://www.bigdatawire.com/wp-content/uploads/2024/02/nvidia-gtc_400x400.png",
+    "website": "https://www.nvidia.com/gtc/",
+    "register": "https://www.nvidia.com/gtc/register/"
+},
+{
+    "name": "Hacktoberfest",
+    "category": "開源社群活動",
+    "description": "每年 10 月舉辦的全球開源貢獻活動，鼓勵開發者參與開源。",
+    "logo": "https://hacktoberfest.com/_next/static/media/logo-hacktoberfest-11--beige.2b2fdfcb.svg",
+    "website": "https://hacktoberfest.com/",
+    "register": "https://hacktoberfest.com/register"
+}, 
+{
+    "name": "PyCon Taiwan",
+    "category": "開源社群活動",
+    "description": "臺灣 Python 社群年會，涵蓋資料科學、AI、Web。",
+    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC6V8CcPYKBA-ZC6pBfvwFWOsL2SEOHNUxvQ&s",
+    "website": "https://tw.pycon.org/"
+}, 
+{
+    "name": "SITCON",
+    "category": "學生技術年會",
+    "description": "臺灣學生資訊年會，涵蓋開源、駭客文化。",
+    "logo": "https://sitcon.org/branding/assets/logos/withname.png",
+    "website": "https://sitcon.org/",
+    "register": "https://sitcon.org/register"
+},
+    {
+        "name": "Intel ISEF",
+        "category": "學生科學競賽",
+        "description": "全球最大高中科學競賽，涵蓋 AI、機器學習、工程。",
+        "logo": "https://www.competitionsciences.org/wp-content/uploads/2017/07/isef_logo.png",
+        "website": "https://www.societyforscience.org/isef/",
+        "register": "https://www.societyforscience.org/isef/competitors/"
+    }
+]

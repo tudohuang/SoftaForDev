@@ -4,123 +4,476 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>關於我們 - 軟體下載中心</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <style>
-
-
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background: #f9fafb;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            color: #1f2937;
+            line-height: 1.6;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background: #ffffff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
         .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
             font-size: 1.8rem;
-            font-weight: bold;
-            color: #28b9dd;
+            font-weight: 700;
+            color: #0d9488;
         }
         .nav-links a {
-            margin-left: 15px;
+            color: #0d9488;
+            font-weight: 600;
+            margin: 0 20px;
             text-decoration: none;
-            color: #2989ee;
             font-size: 1.1rem;
-            transition: 0.3s;
+            transition: color 0.3s ease, transform 0.2s ease;
         }
-        .nav-links a:hover {
-            color: #f39c12;
+        .nav-links a:hover, .nav-links a:focus {
+            color: #2dd4bf;
+            transform: translateY(-2px);
         }
         .hero {
             text-align: center;
-            background: linear-gradient(rgba(230, 71, 71, 0.5), rgba(15, 72, 180, 0.5)), url('hero-bg.jpg');
-            background-size: cover;
-            background-position: center;
-            color: rgb(61, 61, 61);
-            padding: 100px 20px;
-            animation: fadeIn 1.5s ease-in-out;
+            padding: 80px 20px;
+            background: linear-gradient(135deg, #0d9488 0%, #2dd4bf 100%);
+            color: #ffffff;
+            position: relative;
+            overflow: hidden;
+            animation: zoomIn 1s ease-in-out;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" opacity="0.1"%3E%3Cpath fill="%23ffffff" d="M40,80 L80,40 L120,80 L80,120 Z M80,160 L120,120 L160,160 L120,200 Z"/%3E%3C/svg%3E') repeat;
         }
         .hero h1 {
-            font-size: 2.5rem;
+            font-size: 2.75rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
         }
         .hero p {
-            font-size: 1.2rem;
-            margin-top: 10px;
-            color: black;
+            font-size: 1.25rem;
+            max-width: 700px;
+            margin: 0 auto 20px;
+        }
+        .search-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+            animation: zoomIn 1s ease-in-out 0.2s;
+            animation-fill-mode: both;
+        }
+        #search {
+            padding: 14px;
+            font-size: 1.1rem;
+            width: 400px;
+            max-width: 100%;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            outline: none;
+            background: #ffffff;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+        #search:focus {
+            border-color: #2dd4bf;
+            box-shadow: 0 0 0 4px rgba(45, 212, 191, 0.2);
+        }
+        #search-btn {
+            padding: 14px 28px;
+            font-size: 1.1rem;
+            background: #0d9488;
+            color: #ffffff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.2s;
+        }
+        #search-btn:hover, #search-btn:focus {
+            background: #2dd4bf;
+            transform: translateY(-2px);
         }
         .about {
-            max-width: 900px;
+            max-width: 1000px;
             margin: 50px auto;
-            padding: 30px;
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-            animation: slideIn 1.2s ease-in-out;
+            padding: 40px;
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            animation: zoomIn 1s ease-in-out 0.4s;
+            animation-fill-mode: both;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
         }
         .about h2 {
+            font-size: 2rem;
+            font-weight: 600;
+            color: #111827;
+            margin-bottom: 15px;
             display: flex;
             align-items: center;
+            gap: 10px;
+            grid-column: 1 / -1;
         }
         .about h2 i {
-            margin-right: 10px;
-            color: #e74c3c;
+            color: #0d9488;
         }
-        .about img {
-            width: 100%;
+        .about p {
+            font-size: 1.1rem;
+            color: #4b5563;
+            margin-bottom: 15px;
+        }
+        .categories {
+            padding: 60px 20px;
+            text-align: center;
+            background: #ffffff;
+        }
+        .categories h2 {
+            font-size: 2.25rem;
+            font-weight: 600;
+            color: #111827;
+            margin-bottom: 30px;
+            animation: zoomIn 1s ease-in-out;
+        }
+        .category-list {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .category-btn {
+            padding: 14px 28px;
+            background: #0d9488;
+            color: #ffffff;
+            border: none;
             border-radius: 8px;
-            margin-top: 15px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: background 0.3s, transform 0.2s;
+        }
+        .category-btn:hover, .category-btn:focus {
+            background: #2dd4bf;
+            transform: translateY(-2px);
+        }
+        .featured {
+            padding: 60px 20px;
+            text-align: center;
+            background: #ffffff;
+        }
+        .featured h2 {
+            font-size: 2.25rem;
+            font-weight: 600;
+            color: #111827;
+            margin-bottom: 30px;
+            animation: zoomIn 1s ease-in-out;
+        }
+        #featured-software {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
+            animation: zoomIn 1s ease-in-out 0.2s;
+            animation-fill-mode: both;
+        }
+        .software-item {
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .software-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+        .software-logo {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 15px;
+        }
+        .software-item h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #111827;
+            margin-bottom: 10px;
+        }
+        .software-item p {
+            font-size: 1rem;
+            color: #4b5563;
+            margin-bottom: 15px;
+        }
+        .button-group {
+            display: flex;
+            gap: 20px;
+        }
+        .button-group a {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            color: #0d9488;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: color 0.3s, transform 0.2s;
+        }
+        .button-group a:hover, .button-group a:focus {
+            color: #2dd4bf;
+            transform: translateY(-2px);
         }
         footer {
+            padding: 25px;
             text-align: center;
-            padding: 20px;
-            background: #2c3e50;
-            color: white;
-            margin-top: 50px;
+            background: #111827;
+            color: #ffffff;
+            font-size: 0.95rem;
+            margin-top: auto;
         }
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
+        @keyframes zoomIn {
+            from { opacity: 0; transform: scale(0.95); }
+            to { opacity: 1; transform: scale(1); }
         }
-        @keyframes slideIn {
-            from { transform: translateY(20px); opacity: 0; }
-            to { transform: translateY(0); opacity: 1; }
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            .hero p {
+                font-size: 1.2rem;
+            }
+            #search {
+                width: 300px;
+            }
+            #search-btn {
+                padding: 12px 20px;
+            }
+            .category-btn {
+                padding: 12px 20px;
+                font-size: 1rem;
+            }
+            #featured-software {
+                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            }
+            .about {
+                grid-template-columns: 1fr;
+                margin: 30px 15px;
+                padding: 20px;
+            }
+        }
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                gap: 15px;
+                padding: 15px 20px;
+            }
+            .nav-links a {
+                margin: 8px 15px;
+            }
+            .hero {
+                padding: 60px 15px;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .hero p {
+                font-size: 1.1rem;
+            }
+            #search {
+                width: 250px;
+            }
+            #featured-software {
+                grid-template-columns: 1fr;
+                padding: 0 15px;
+            }
+        }
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 1.75rem;
+            }
+            .hero p {
+                font-size: 1rem;
+            }
+            #search {
+                width: 200px;
+                font-size: 0.95rem;
+            }
+            #search-btn {
+                padding: 10px 16px;
+                font-size: 0.95rem;
+            }
+            .category-btn {
+                padding: 10px 16px;
+                font-size: 0.95rem;
+            }
+            .about h2 {
+                font-size: 1.75rem;
+            }
+            .about p {
+                font-size: 1rem;
+            }
         }
         ::-webkit-scrollbar {
-    width: 12px; /* 滾動條寬度 */
-}
-
-::-webkit-scrollbar-track {
-    background: #f1f1f1; /* 滾動條軌道背景色 */
-    border-radius: 10px; /* 滾動條軌道圓角 */
-}
-
-::-webkit-scrollbar-thumb {
-    background: #888; /* 滾動條顏色 */
-    border-radius: 10px; /* 滾動條圓角 */
-    border: 3px solid #f1f1f1; /* 滾動條邊框 */
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #555; /* 滾動條懸停顏色 */
-}
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f9fafb;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #4b5563;
+            border-radius: 10px;
+            border: 2px solid #f9fafb;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #0d9488;
+        }
     </style>
 </head>
 <body>
     <nav class="navbar">
-        <div class="logo"><i class="fas fa-download"></i> Software Hub</div>
+        <div class="logo">
+            <i class="fas fa-download"></i> Software Hub
+        </div>
         <div class="nav-links">
-            <a href="index.html"><i class="fas fa-home"></i> 首頁</a>
-            <a href="category.html?query=all"><i class="fas fa-th"></i> 所有軟體</a>
-            <a href="about.html"><i class="fas fa-info-circle"></i> 關於</a>
+            <a href="index.html" aria-label="首頁"><i class="fas fa-home"></i> 首頁</a>
+            <a href="category.html?query=all" aria-label="所有軟體"><i class="fas fa-th"></i> 所有軟體</a>
+            <a href="about.html" aria-label="關於"><i class="fas fa-info-circle"></i> 關於</a>
         </div>
     </nav>
 
     <header class="hero">
         <h1><i class="fas fa-users"></i> 關於我們</h1>
         <p>我們希望開發者不知道該查什麼時，來這裡就能找到所需的工具與資訊</p>
+        <div class="search-container">
+            <input type="text" id="search" placeholder="搜尋軟體，例如 VS Code, Python" aria-label="搜尋軟體">
+            <button id="search-btn" aria-label="搜尋"><i class="fas fa-search"></i> 搜尋</button>
+        </div>
     </header>
 
     <section class="about">
         <h2><i class="fas fa-book"></i> 目標</h2>
-        <p>Software Hub 不是單純的軟體下載平台，而是一個開發者的知識與工具中心。我們希望讓開發者在不知道該查什麼時，來這裡就能找到 <strong>開發工具、技術活動、學習資源</strong>，甚至發現意想不到的新知識。</p>
-</p>
+        <p>Software Hub 不是單純的軟體下載平台，而是一個開發者的知識與工具中心。我們希望讓開發者在不知道該查什麼時，來這裡就能找到 <strong>開發工具、技術活動、學習資源、網站、店家</strong>，甚至發現意想不到的新知識。</p>
+        <p>我們的使命是為全球開發者提供一個高效、可靠的資源平台，促進技術交流與創新。通過精心挑選的軟體和資源，我們致力於簡化開發流程，助力您的項目成功。</p>
     </section>
-<br><br>
+
+    <section class="categories">
+        <h2>軟體類別</h2>
+        <div class="category-list">
+            <button class="category-btn" onclick="goToCategory('開發工具')" aria-label="瀏覽開發工具"><i class="fas fa-code"></i> 開發工具</button>
+            <button class="category-btn" onclick="goToCategory('多媒體')" aria-label="瀏覽多媒體"><i class="fas fa-video"></i> 多媒體</button>
+            <button class="category-btn" onclick="goToCategory('系統工具')" aria-label="瀏覽系統工具"><i class="fas fa-cogs"></i> 系統工具</button>
+        </div>
+    </section>
+
+    <section class="featured">
+        <h2>精選軟體</h2>
+        <div id="featured-software"></div>
+    </section>
+
     <footer>
-        <p>&copy; 2024 Software Hub - All Rights Reserved</p>
+        <p>© 2025 Software Hub - All Rights Reserved</p>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const searchInput = document.getElementById('search');
+            const searchBtn = document.getElementById('search-btn');
+            const featuredSoftware = document.getElementById('featured-software');
+
+            // Fetch and display featured software
+            fetch(`data.json?t=${new Date().getTime()}`)
+                .then(response => {
+                    if (!response.ok) throw new Error('無法載入軟體資料');
+                    return response.json();
+                })
+                .then(data => {
+                    console.log('✅ 成功讀取 JSON:', data);
+                    // Randomize and select up to 6 featured software items
+                    const shuffledData = data.sort(() => Math.random() - 0.5);
+                    const featuredData = shuffledData.slice(0, 6);
+                    renderSoftware(featuredData, featuredSoftware);
+                })
+                .catch(error => {
+                    console.error('❌ 讀取 JSON 失敗:', error);
+                    featuredSoftware.innerHTML = '<p style="text-align:center;color:#dc2626;">無法載入精選軟體，請稍後再試。</p>';
+                });
+
+            function renderSoftware(data, targetElement) {
+                if (!targetElement) return;
+                targetElement.innerHTML = '';
+                if (data.length === 0) {
+                    targetElement.innerHTML = '<p style="text-align:center;color:#4b5563;">暫無軟體顯示。</p>';
+                    return;
+                }
+                data.forEach(software => {
+                    const div = document.createElement('div');
+                    div.classList.add('software-item');
+                    div.innerHTML = `
+                        <img src="${software.logo}" alt="${software.name} Logo" class="software-logo">
+                        <h3>${software.name}</h3>
+                        <p>${software.description}</p>
+                        <div class="button-group">
+                            <a href="${software.website}" target="_blank" aria-label="前往${software.name}官方網站"><i class="fas fa-globe"></i> 官方網站</a>
+                            <a href="${software.download}" target="_blank" aria-label="下載${software.name}"><i class="fas fa-download"></i> 下載</a>
+                        </div>
+                    `;
+                    targetElement.appendChild(div);
+                });
+            }
+
+            // Search functionality
+            searchBtn.addEventListener('click', () => {
+                const query = searchInput.value.trim();
+                if (query.toLowerCase() === 'all') {
+                    window.location.href = 'category.html';
+                } else if (query) {
+                    window.location.href = `category.html?search=${encodeURIComponent(query)}`;
+                }
+            });
+
+            searchInput.addEventListener('keypress', e => {
+                if (e.key === 'Enter') searchBtn.click();
+            });
+
+            // Category navigation
+            window.goToCategory = function(category) {
+                window.location.href = `category.html?type=${encodeURIComponent(category)}`;
+            };
+        });
+    </script>
 </body>
 </html>

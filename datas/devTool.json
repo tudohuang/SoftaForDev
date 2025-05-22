@@ -1,0 +1,118 @@
+[
+    {
+    "name": "Visual Studio Code",
+    "category": "開發工具",
+    "description": "輕量級但功能強大的程式碼編輯器，支援多種擴充功能。",
+    "logo": "https://code.visualstudio.com/assets/images/code-stable.png",
+    "website": "https://code.visualstudio.com/",
+    "download": "https://code.visualstudio.com/Download"
+}, 
+{
+    "name": "PyCharm",
+    "category": "開發工具",
+    "description": "JetBrains 出品的專業 Python IDE，擁有強大的代碼補全和除錯功能。",
+    "logo": "https://resources.jetbrains.com/storage/products/pycharm/img/meta/pycharm_logo_300x300.png",
+    "website": "https://www.jetbrains.com/pycharm/",
+    "download": "https://www.jetbrains.com/pycharm/download/"
+}, 
+{
+    "name": "Arduino IDE",
+    "category": "開發工具",
+    "description": "官方開發環境，用於編寫和上傳 Arduino 程式。",
+    "logo": "https://www.arduino.cc/en/uploads/Trademark/ArduinoCommunityLogo.png",     
+    "website": "https://www.arduino.cc/en/software",
+    "download": "https://www.arduino.cc/en/software"
+},
+{
+    "name": "ESP-IDF",
+    "category": "開發工具",
+    "description": "ESP32 官方開發框架，適用於 IoT 和嵌入式開發。",
+    "logo": "https://docs.espressif.com/projects/esp-idf/en/latest/_static/espressif-logo.svg",
+    "website": "https://docs.espressif.com/projects/esp-idf/en/latest/esp32/",
+    "download": "https://github.com/espressif/esp-idf"
+},
+{
+    "name": "KiCad",
+    "category": "開發工具",
+    "description": "免費開源的電子設計自動化 (EDA) 軟體，適用於 PCB 設計。",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/KiCad-Logo.svg/120px-KiCad-Logo.svg.png",
+    "website": "https://www.kicad.org/",
+    "download": "https://www.kicad.org/download/"
+},
+{
+    "name": "Dev-C++",
+    "category": "開發工具",
+    "description": "適用於 Windows 的輕量級 C/C++ 開發環境。",
+    "logo": "https://store-images.s-microsoft.com/image/apps.8200.14525614036320964.388ccdd1-65a9-4bfc-81ce-c614493bcc79.5dfc4719-b603-45a1-a73e-bf55d9d25077",
+    "website": "https://sourceforge.net/projects/orwelldevcpp/",
+    "download": "https://sourceforge.net/projects/orwelldevcpp/files/latest/download"   
+},
+{
+    "name": "Code::Blocks",
+    "category": "開發工具",
+    "description": "跨平台 C/C++ IDE，支援多種編譯器。",
+    "logo": "https://wiki.codeblocks.org/images/c/c7/Cb_splash.png",
+    "website": "https://www.codeblocks.org/",
+    "download": "https://www.codeblocks.org/downloads/"
+},
+{
+    "name": "PlatformIO",
+    "category": "開發工具",
+    "description": "嵌入式開發生態系統，支援 Arduino、ESP32、STM32 等。",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/PlatformIO_logo.svg/1200px-PlatformIO_logo.svg.png",
+    "website": "https://platformio.org/",
+    "download": "https://platformio.org/install"
+},
+{
+    "name": "WebStorm",
+    "category": "開發工具",
+    "description": "JetBrains 出品的專業 JavaScript & Web IDE。",
+    "logo": "https://resources.jetbrains.com/storage/products/webstorm/img/meta/webstorm_logo_300x300.png",
+    "website": "https://www.jetbrains.com/webstorm/",
+    "download": "https://www.jetbrains.com/webstorm/download/"
+},
+{
+    "name": "Processing",
+    "category": "開發工具",
+    "description": "適用於視覺設計、互動藝術與創意程式設計的開發環境。",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Processing_2021_logo.svg/180px-Processing_2021_logo.svg.png",
+    "website": "https://processing.org/",
+    "download": "https://processing.org/download"
+},
+{
+    "name": "ModelSim",
+    "category": "開發工具",
+    "description": "高效能 Verilog / VHDL 模擬器，適用於 FPGA/ASIC 設計與測試。",       
+    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKUzEO2v6gyztVs8h_xEgZLfHulxPBLrtyzQ&s",
+    "website": "https://www.mentor.com/products/fpga/model-sim/",
+    "download": "https://www.mentor.com/products/fpga/model-sim/download"
+},
+{
+    "name": "Xcode",
+    "category": "開發工具",
+    "description": "Apple 官方的 iOS / macOS 開發環境，內建 Swift、Objective-C 支援。", 
+    "logo": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/59/05/ea/5905eaa1-334a-549c-931f-81f30777d6f4/Xcode-85-220-0-4-2x-sRGB.png/1200x630bb.png",
+    "website": "https://developer.apple.com/xcode/"
+},
+{
+    "name": "Visual Studio",
+    "category": "開發工具",
+    "description": "微軟的全功能開發環境，支援 C#、C++、Python。",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Visual_Studio_Icon_2022.svg/1200px-Visual_Studio_Icon_2022.svg.png",
+    "website": "https://visualstudio.microsoft.com/"
+},
+{
+    "name": "IntelliJ IDEA",
+    "category": "開發工具",
+    "description": "JetBrains 出品的專業 Java / Kotlin IDE。",
+    "logo": "https://resources.jetbrains.com/storage/products/intellij-idea/img/meta/intellij-idea_logo_300x300.png",
+    "website": "https://www.jetbrains.com/idea/"
+},
+{
+    "name": "Eclipse",
+    "category": "開發工具",
+    "description": "開源 Java / C++ 開發環境，支援多種插件擴展。",
+    "logo": "https://www.iri.com/blog/wp-content/uploads/2012/06/eclipse-logo.png",     
+    "website": "https://www.eclipse.org/"
+}
+]

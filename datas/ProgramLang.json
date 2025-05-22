@@ -1,0 +1,177 @@
+[
+    {
+    "name": "C",
+    "category": "程式語言",
+    "description": "系統程式語言，適用於嵌入式、作業系統開發。",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png",
+    "website": "https://en.cppreference.com/w/c"
+}, 
+{
+    "name": "C++",
+    "category": "程式語言",
+    "description": "強大的物件導向與系統程式語言，適用於遊戲與高效能開發。",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg",
+    "website": "https://isocpp.org/"
+}, 
+{
+    "name": "C#",
+    "category": "程式語言",
+    "description": "微軟開發的強大物件導向語言，適用於 .NET 開發。",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Csharp_Logo.png",
+    "website": "https://learn.microsoft.com/en-us/dotnet/csharp/"
+},
+{
+    "name": "Objective-C",
+    "category": "程式語言",
+    "description": "Apple 早期主要語言，仍用於 macOS / iOS 開發。",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Objective-C_logo.png", 
+    "website": "https://developer.apple.com/documentation/objectivec"
+},
+{
+    "name": "D Language",
+    "category": "程式語言",
+    "description": "C++ 的現代替代語言，適用於高效能系統開發。",
+    "logo": "https://dlang.org/images/dlogo.svg",
+    "website": "https://dlang.org/"
+},
+{
+    "name": "Java",
+    "category": "程式語言",
+    "description": "跨平台的物件導向語言，適用於企業級應用、Android。",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg",
+    "website": "https://www.java.com/"
+},
+{
+    "name": "Groovy",
+    "category": "程式語言",
+    "description": "運行於 JVM 的動態語言，適用於 Gradle、Spring Boot。",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/3/36/Groovy-logo.svg",      
+    "website": "https://groovy-lang.org/"
+},
+{
+    "name": "Clojure",
+    "category": "程式語言",
+    "description": "基於 JVM 的函數式語言，適用於資料處理。",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Clojure_logo.svg",     
+    "website": "https://clojure.org/"
+},
+{
+    "name": "JavaScript",
+    "category": "程式語言",
+    "description": "Web 開發的核心語言，可用於前端和後端。",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",  
+    "website": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+},
+{
+    "name": "TypeScript",
+    "category": "程式語言",
+    "description": "JavaScript 的超集，提供強大的型別支援。",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg",
+    "website": "https://www.typescriptlang.org/"
+},
+{
+    "name": "Node.js",
+    "category": "程式語言",
+    "description": "基於 V8 引擎的 JavaScript 後端運行環境。",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png",
+    "website": "https://nodejs.org/"
+},
+{
+    "name": "HTML",
+    "category": "程式語言",
+    "description": "超文本標記語言，Web 前端的基礎技術。",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg",
+    "website": "https://developer.mozilla.org/en-US/docs/Web/HTML"
+},
+{
+    "name": "CSS",
+    "category": "程式語言",
+    "description": "層疊樣式表，負責 Web 網頁的外觀與佈局。",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg",
+    "website": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+},
+{
+    "name": "SQL",
+    "category": "程式語言",
+    "description": "用於操作關聯式資料庫（MySQL、PostgreSQL）。",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png",
+    "website": "https://www.w3schools.com/sql/"
+},
+{
+    "name": "Python",
+    "category": "程式語言",
+    "description": "易學易用，適合資料分析、AI、Web 開發。",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/800px-Python-logo-notext.svg.png",
+    "website": "https://www.python.org/"
+},
+{
+    "name": "Rust",
+    "category": "程式語言",
+    "description": "高效能、內存安全的系統語言，適用於低階開發。",
+    "logo": "https://www.rust-lang.org/static/images/rust-logo-blk.svg",
+    "website": "https://www.rust-lang.org/"
+},
+{
+    "name": "Go (Golang)",
+    "category": "程式語言",
+    "description": "Google 開發的高效能後端語言，適用於微服務。",
+    "logo": "https://go.dev/images/go-logo-blue.svg",
+    "website": "https://go.dev/"
+},
+{
+    "name": "Ruby",
+    "category": "程式語言",
+    "description": "簡潔優雅的語言，適用於 Web 開發（Ruby on Rails）。",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/7/73/Ruby_logo.svg",
+    "website": "https://www.ruby-lang.org/"
+},
+{
+    "name": "PHP",
+    "category": "程式語言",
+    "description": "Web 開發的伺服器端語言，適用於動態網站。",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg",
+    "website": "https://www.php.net/"
+},
+{
+    "name": "Swift",
+    "category": "程式語言",
+    "description": "Apple 開發的現代語言，用於 iOS 和 macOS 開發。",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Swift_logo_and_wordmark.svg/1200px-Swift_logo_and_wordmark.svg.png",
+    "website": "https://swift.org/"
+},
+{
+    "name": "Kotlin",
+    "category": "程式語言",
+    "description": "Android 官方支援的語言，與 Java 互操作性強。",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Kotlin_Icon.svg",
+    "website": "https://kotlinlang.org/"
+},
+{
+    "name": "R",
+    "category": "程式語言",
+    "description": "專為統計分析和數據視覺化設計的語言。",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/1/1c/R_logo.svg",
+    "website": "https://www.r-project.org/"
+},
+{
+    "name": "MATLAB",
+    "category": "程式語言",
+    "description": "數學和工程計算的專業語言，適用於數據分析和建模。",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/2/21/MATLAB_Logo.png",
+    "website": "https://www.mathworks.com/products/matlab.html"
+},
+{
+    "name": "Scala",
+    "category": "程式語言",
+    "description": "結合物件導向與函數式編程的語言，適用於大數據處理（Spark）。",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Scala_logo.svg",
+    "website": "https://www.scala-lang.org/"
+},
+{
+    "name": "Perl",
+    "category": "程式語言",
+    "description": "強大的文字處理和系統管理語言，適用於網頁開發。",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Perl_logo.svg",
+    "website": "https://www.perl.org/"
+}
+]

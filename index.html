@@ -4,494 +4,418 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>軟體下載中心</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <style>
-        body {
+        * {
+            box-sizing: border-box;
             margin: 0;
+            padding: 0;
+        }
+        body {
             min-height: 100vh;
             display: flex;
             flex-direction: column;
-            background: #f0f0f0;
-            font-family: Arial, sans-serif;
-            /*overflow: hidden;*/
+            background: #f7f8fa;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            color: #2d3748;
+            line-height: 1.6;
         }
         .navbar {
             display: flex;
             justify-content: space-between;
-            padding: 10px 20px;
+            align-items: center;
+            padding: 20px 40px;
             background: #ffffff;
-            color: rgb(0, 81, 255);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #1a4971;
         }
         .nav-links a {
-            color: rgb(0, 76, 255);
-            font-weight: bold;
-            margin: 0 10px;
+            color: #1a4971;
+            font-weight: 600;
+            margin: 0 20px;
             text-decoration: none;
+            transition: color 0.3s ease, transform 0.2s ease;
+        }
+        .nav-links a:hover, .nav-links a:focus {
+            color: #2b6cb0;
+            transform: translateY(-2px);
         }
         .hero {
             text-align: center;
-            padding: 50px 20px;
-    
+            padding: 80px 20px;
+            background: linear-gradient(135deg, #1a4971 0%, #2b6cb0 100%);
+            color: #ffffff;
+            position: relative;
+            overflow: hidden;
         }
-        .hero p{
-            font-size: 1.2rem;
-            margin-top: 10px;
-            color: black;
+        .hero::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 50px;
+            background: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100"%3E%3Cpath fill="%23ffffff" fill-opacity="1" d="M0,32L80,48C160,64,320,96,480,90.7C640,85,800,53,960,48C1120,43,1280,64,1360,74.7L1440,85V100H1360C1280,100,1120,100,960,100C800,100,640,100,480,100C320,100,160,100,80,100H0V32Z"%3E%3C/path%3E%3C/svg%3E') no-repeat bottom;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            animation: fadeInUp 1s ease-out;
+        }
+        .hero p {
+            font-size: 1.3rem;
+            max-width: 700px;
+            margin: 0 auto 20px;
+            animation: fadeInUp 1s ease-out 0.2s;
+            animation-fill-mode: both;
         }
         .search-container {
             display: flex;
-            gap: 10px;
             justify-content: center;
-            margin-top: 20px;
+            gap: 15px;
+            margin-top: 30px;
+            animation: fadeInUp 1s ease-out 0.4s;
+            animation-fill-mode: both;
         }
         #search {
-            padding: 8px;
-            font-size: 16px;
-            width: 300px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
+            padding: 14px;
+            font-size: 1.1rem;
+            width: 400px;
+            max-width: 100%;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            outline: none;
+            background: #ffffff;
+            transition: border-color 0.3s, box-shadow 0.3s;
         }
-        #search-btn, #close-btn {
-            padding: 8px 15px;
-            cursor: pointer;
-            border: none;
-            border-radius: 5px;
+        #search:focus {
+            border-color: #2b6cb0;
+            box-shadow: 0 0 0 4px rgba(43, 108, 176, 0.2);
         }
         #search-btn {
-            background: #007bff;
-            color: white;
+            padding: 14px 28px;
+            font-size: 1.1rem;
+            background: #2b6cb0;
+            color: #ffffff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.2s;
         }
-        #close-btn {
-            display: none; /* 初始隱藏 */
-            background: #ff4444;
-            color: white;
+        #search-btn:hover, #search-btn:focus {
+            background: #1a4971;
+            transform: translateY(-2px);
         }
-        .categories, .popular {
-            padding: 20px;
+        .categories, .featured {
+            padding: 60px 20px;
             text-align: center;
+            background: #ffffff;
+        }
+        .categories h2, .featured h2 {
+            font-size: 2.25rem;
+            font-weight: 600;
+            color: #1a202c;
+            margin-bottom: 30px;
+            animation: fadeInUp 1s ease-out;
         }
         .category-list {
             display: flex;
             justify-content: center;
-            gap: 20px;
+            gap: 25px;
+            flex-wrap: wrap;
+            margin-top: 20px;
         }
         .category-btn {
-            padding: 10px 20px;
-            background: #007bff;
-            color: white;
+            padding: 14px 28px;
+            background: #2b6cb0;
+            color: #ffffff;
             border: none;
-            border-radius: 5px;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 600;
             cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: background 0.3s, transform 0.2s;
         }
-        #software-list, #popular-software {
-            max-width: 800px;
+        .category-btn:hover, .category-btn:focus {
+            background: #1a4971;
+            transform: translateY(-2px);
+        }
+        #featured-software {
+            max-width: 1200px;
             margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
+            animation: fadeInUp 1s ease-out 0.2s;
+            animation-fill-mode: both;
         }
         .software-item {
-            padding: 10px;
-            margin: 10px 0;
-            background: white;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .software-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
         }
         .software-logo {
             width: 50px;
             height: 50px;
+            margin-bottom: 15px;
+        }
+        .software-item h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #1a202c;
+            margin-bottom: 10px;
+        }
+        .software-item p {
+            font-size: 1rem;
+            color: #4a5568;
+            margin-bottom: 15px;
+        }
+        .button-group {
+            display: flex;
+            gap: 20px;
         }
         .button-group a {
-            margin: 0 10px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
             text-decoration: none;
-            color: #007bff;
+            color: #2b6cb0;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: color 0.3s, transform 0.2s;
         }
-        .marquee-container {
-            overflow: hidden;
-            white-space: nowrap;
-        }
-        .marquee {
-            display: inline-block;
-            animation: marquee 15s linear infinite;
-        }
-        @keyframes marquee {
-            0% { transform: translateX(100%); }
-            100% { transform: translateX(-100%); }
+        .button-group a:hover, .button-group a:focus {
+            color: #1a4971;
+            transform: translateY(-2px);
         }
         footer {
-            padding: 10px;
+            padding: 25px;
             text-align: center;
-            background: #333;
-            color: white;
+            background: #1a202c;
+            color: #ffffff;
+            font-size: 0.95rem;
             margin-top: auto;
         }
-        #ball {
-            width: 100px;
-            height: 100px;
-            background: radial-gradient(circle at 30% 30%, #ff6200, #d35400);
-            border: 2px solid black;
-            position: absolute;
-            cursor: move;
-            display: none;
-            border-radius: 50%;
-            box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
-            transition: transform 0.1s;
-            z-index: 1000; /* 確保籃球在最上層 */
-        }
-        #message {
-            color: #666;
-            margin-top: 10px;
-            font-size: 14px;
-            opacity: 0;
-            transition: opacity 0.5s;
-            position: absolute;
-            top: 150px;
-            z-index: 1001;
-        }
-        #message.show {
-            opacity: 1;
-        }
-        /* 響應式調整 */
-        @media (max-width: 600px) {
-            #search {
-                width: 200px;
-                font-size: 14px;
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
             }
-            #search-btn, #close-btn {
-                padding: 6px 10px;
-                font-size: 14px;
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            .hero p {
+                font-size: 1.2rem;
+            }
+            #search {
+                width: 300px;
+            }
+            #search-btn {
+                padding: 12px 20px;
             }
             .category-btn {
-                padding: 8px 15px;
-                font-size: 14px;
+                padding: 12px 20px;
+                font-size: 1rem;
             }
-            #ball {
-                width: 60px;
-                height: 60px;
-            }
-            #software-list, #popular-software {
-                width: 90%;
+            #featured-software {
+                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             }
         }
-        #callForAction {
-            align-items: center;
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                gap: 15px;
+                padding: 15px 20px;
+            }
+            .nav-links a {
+                margin: 8px 15px;
+            }
+            .hero {
+                padding: 60px 15px;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .hero p {
+                font-size: 1.1rem;
+            }
+            #search {
+                width: 250px;
+            }
+            #featured-software {
+                grid-template-columns: 1fr;
+                padding: 0 15px;
+            }
         }
-
-        .cta-button {
-            display: inline-block;
-            padding: 10px 20px;
-            margin-top: 10px;
-            background-color: #007BFF;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background 0.3s;
-        }
-        .cta-button:hover {
-            background-color: #0056b3;
-        }
-        .json-format {
-            align-items: center;
-            background-color: #f8f8f8;
-            padding: 15px;
-            border-radius: 5px;
-            text-align: left;
-            overflow-x: auto;
-            font-family: monospace;
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 1.75rem;
+            }
+            .hero p {
+                font-size: 1rem;
+            }
+            #search {
+                width: 200px;
+                font-size: 0.95rem;
+            }
+            #search-btn {
+                padding: 10px 16px;
+                font-size: 0.95rem;
+            }
+            .category-btn {
+                padding: 10px 16px;
+                font-size: 0.95rem;
+            }
         }
         ::-webkit-scrollbar {
-    width: 13px; /* 滾動條寬度 */
-}
-
-::-webkit-scrollbar-track {
-    background:rgb(255, 253, 253); /* 滾動條軌道背景色 */
-    border-radius: 10px; /* 滾動條軌道圓角 */
-}
-
-::-webkit-scrollbar-thumb {
-    background: #888; /* 滾動條顏色 */
-    border-radius: 10px; /* 滾動條圓角 */
-    border: 3px solid #f1f1f1; /* 滾動條邊框 */
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #28b9dd /* 滾動條懸停顏色 */
-}
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f7f8fa;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #4a5568;
+            border-radius: 10px;
+            border: 2px solid #f7f8fa;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #2b6cb0;
+        }
     </style>
 </head>
 <body>
     <nav class="navbar">
-        <div class="logo"><i class="fas fa-download"></i> Software Hub</div>
-        <div class="nav-links">
-            <a href="index.html"><i class="fas fa-home"></i> 首頁</a>
-            <a href="category.html?query=all"><i class="fas fa-th"></i> 所有軟體</a>
-            <a href="about.html"><i class="fas fa-info-circle"></i> 關於</a>
+        <div class="logo">
+            <i class="fas fa-download"></i> Software Hub
         </div>
-    </nav>
+        <div class="nav-links">
+            <a href="index.html" aria-label="首頁"><i class="fas fa-home"></i> 首頁</a>
+            <a href="category.html?query=all" aria-label="所有軟體"><i class="fas fa-th"></i> 所有軟體</a>
+            <a href="about.html" aria-label="關於"><i class="fas fa-info-circle"></i> 關於</a>
+        </div>
     </nav>
 
     <header class="hero">
         <h1>專業軟體下載平台</h1>
-        <p>提供最快速、最安全的軟體下載，讓您的工作更加高效</p>
+        <p>探索高效、安全的軟體解決方案，助力您的業務成功</p>
         <div class="search-container">
-            <input type="text" id="search" placeholder="搜尋軟體，例如 VS Code, Python">
-            <button id="search-btn"><i class="fas fa-search"></i></button>
-            <button id="close-btn">關閉籃球</button>
+            <input type="text" id="search" placeholder="搜尋軟體，例如 VS Code, Python" aria-label="搜尋軟體">
+            <button id="search-btn" aria-label="搜尋"><i class="fas fa-search"></i> 搜尋</button>
         </div>
     </header>
 
-    <div id="message"></div>
-    <div id="ball"></div>
-
     <section class="categories">
-        <h2>探索軟體類別</h2>
+        <h2>軟體類別</h2>
         <div class="category-list">
-            <button class="category-btn" onclick="goToCategory('開發工具')"><i class="fas fa-code"></i> 開發工具</button>
-            <button class="category-btn" onclick="goToCategory('多媒體')"><i class="fas fa-video"></i> 多媒體</button>
-            <button class="category-btn" onclick="goToCategory('系統工具')"><i class="fas fa-cogs"></i> 系統工具</button>
+            <button class="category-btn" onclick="goToCategory('開發工具')" aria-label="瀏覽開發工具"><i class="fas fa-code"></i> 開發工具</button>
+            <button class="category-btn" onclick="goToCategory('多媒體')" aria-label="瀏覽多媒體"><i class="fas fa-video"></i> 多媒體</button>
+            <button class="category-btn" onclick="goToCategory('系統工具')" aria-label="瀏覽系統工具"><i class="fas fa-cogs"></i> 系統工具</button>
         </div>
     </section>
 
-    <section class="popular">
-        <div class="marquee-container">
-            <div class="marquee">
-                <p>🚀 最新推薦：VS Code, PyCharm, WebStorm, PlatformIO, ModelSim, Quartus Prime, TensorFlow！🔥</p>
-            </div>
-        </div>
-        <!--<h2>熱門軟體</h2>-->
-        <!--<div id="popular-software"></div>-->
+    <section class="featured">
+        <h2>精選軟體</h2>
+        <div id="featured-software"></div>
     </section>
-    <section id="callForAction">
-        <h2>歡迎加入我們</h2>
-        <p>任何優秀的軟體、框架、網站、活動，歡迎放入以下連結的 <code>DataForPublic.json</code></p>
-        <a href="https://github.com/tudohuang/SoftaForDev/DataForPublic.json" target="_blank" class="cta-button">提交您的貢獻</a>
-        <pre class="json-format">
-{
-"name": "軟體名稱",
-"description": "軟體描述",
-"category": "軟體類別",
-"logo": "軟體Logo URL",
-"website": "官方網站 URL",
-"download": "下載連結 URL"
-}
-        </pre>
-    </section>
-<br><br>
+
     <footer>
-        <p>© 2024 Software Hub - All Rights Reserved</p>
+        <p>© 2025 Software Hub - All Rights Reserved</p>
     </footer>
 
     <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const searchInput = document.getElementById("search");
-            const searchBtn = document.getElementById("search-btn");
-            const closeBtn = document.getElementById("close-btn");
-            const softwareList = document.getElementById("software-list");
-            const popularSoftware = document.getElementById("popular-software");
-            const ball = document.getElementById("ball");
-            const message = document.getElementById("message");
-            let isDragging = false;
-            let velocityX = 0;
-            let velocityY = 0;
-            let posX = 0;
-            let posY = 0;
-            let rotation = 0;
+        document.addEventListener('DOMContentLoaded', () => {
+            const searchInput = document.getElementById('search');
+            const searchBtn = document.getElementById('search-btn');
+            const featuredSoftware = document.getElementById('featured-software');
 
-            // 讀取 JSON 檔案並初始化
+            // Fetch and display featured software
             fetch(`data.json?t=${new Date().getTime()}`)
-                .then(response => response.json())
-                .then(data => {
-                    console.log("✅ 成功讀取最新 JSON:", data);
-                    initPage(data);
+                .then(response => {
+                    if (!response.ok) throw new Error('無法載入軟體資料');
+                    return response.json();
                 })
-                .catch(error => console.error("❌ 讀取 JSON 失敗:", error));
-
-            function initPage(data) {
-                const urlParams = new URLSearchParams(window.location.search);
-                const searchQuery = urlParams.get("search");
-                const categoryType = urlParams.get("type");
-                const categoryTitle = document.getElementById("category-title");
-
-                if (searchQuery) {
-                    if (categoryTitle) categoryTitle.textContent = `搜尋結果：「${searchQuery}」`;
-                    const filteredData = data.filter(software =>
-                        software.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                        software.category.toLowerCase().includes(searchQuery.toLowerCase())
-                    );
-                    renderSoftware(filteredData, softwareList);
-                    if (searchQuery.toLowerCase() === "籃球") {
-                        triggerEasterEgg();
-                    }
-                } else if (categoryType) {
-                    if (categoryTitle) categoryTitle.textContent = `分類：${categoryType}`;
-                    const filteredData = data.filter(software => software.category === categoryType);
-                    renderSoftware(filteredData, softwareList);
-                } else {
-                    if (categoryTitle) categoryTitle.textContent = "所有軟體";
-                    renderSoftware(data, softwareList || popularSoftware);
-                }
-            }
+                .then(data => {
+                    console.log('✅ 成功讀取 JSON:', data);
+                    // Randomize and select up to 6 featured software items
+                    const shuffledData = data.sort(() => Math.random() - 0.5);
+                    const featuredData = shuffledData.slice(0, 6);
+                    renderSoftware(featuredData, featuredSoftware);
+                })
+                .catch(error => {
+                    console.error('❌ 讀取 JSON 失敗:', error);
+                    featuredSoftware.innerHTML = '<p style="text-align:center;color:#c53030;">無法載入精選軟體，請稍後再試。</p>';
+                });
 
             function renderSoftware(data, targetElement) {
-                if (!targetElement) {
-                    console.error("❌ 錯誤: 找不到要渲染的目標元素");
-                    return;
-                }
-
-                targetElement.innerHTML = "";
+                if (!targetElement) return;
+                targetElement.innerHTML = '';
                 if (data.length === 0) {
-                    targetElement.innerHTML = `<p style="text-align:center;">找不到符合條件的軟體。</p>`;
+                    targetElement.innerHTML = '<p style="text-align:center;color:#4a5568;">暫無軟體顯示。</p>';
                     return;
                 }
-
                 data.forEach(software => {
-                    const div = document.createElement("div");
-                    div.classList.add("software-item");
+                    const div = document.createElement('div');
+                    div.classList.add('software-item');
                     div.innerHTML = `
                         <img src="${software.logo}" alt="${software.name} Logo" class="software-logo">
-                        <h2>${software.name}</h2>
+                        <h3>${software.name}</h3>
                         <p>${software.description}</p>
                         <div class="button-group">
-                            <a href="${software.website}" target="_blank"><i class="fa-solid fa-globe"></i>官方網站</a>
-                            <a href="${software.download}" target="_blank"><i class="fa-solid fa-download"></i>下載</a>
+                            <a href="${software.website}" target="_blank" aria-label="前往${software.name}官方網站"><i class="fas fa-globe"></i> 官方網站</a>
+                            <a href="${software.download}" target="_blank" aria-label="下載${software.name}"><i class="fas fa-download"></i> 下載</a>
                         </div>
                     `;
                     targetElement.appendChild(div);
                 });
             }
 
-            // 搜尋功能
-            searchBtn.addEventListener("click", () => {
+            // Search functionality
+            searchBtn.addEventListener('click', () => {
                 const query = searchInput.value.trim();
-                if (query.toLowerCase() === "all") {
-                    window.location.href = "category.html";
-                } else if (query.toLowerCase() === "籃球") {
-                    triggerEasterEgg();
-                } 
-                else if (query) {
-                    window.location.href = `category.html?search=${query}`;
+                if (query.toLowerCase() === 'all') {
+                    window.location.href = 'category.html';
+                } else if (query) {
+                    window.location.href = `category.html?search=${encodeURIComponent(query)}`;
                 }
             });
 
-            searchInput.addEventListener("keypress", (e) => {
-                if (e.key === "Enter") {
-                    searchBtn.click();
-                }
+            searchInput.addEventListener('keypress', e => {
+                if (e.key === 'Enter') searchBtn.click();
             });
 
-            // 分類跳轉
+            // Category navigation
             window.goToCategory = function(category) {
                 window.location.href = `category.html?type=${encodeURIComponent(category)}`;
             };
-
-            // 彩蛋功能：觸發籃球
-            function triggerEasterEgg() {
-                ball.style.display = 'block';
-                closeBtn.style.display = 'inline-block';
-                const ballSize = window.innerWidth <= 600 ? 60 : 100;
-                posX = window.innerWidth / 2 - ballSize / 2;
-                posY = window.innerHeight / 2 - ballSize / 2;
-                ball.style.left = posX + 'px';
-                ball.style.top = posY + 'px';
-                velocityX = 0;
-                velocityY = 0;
-                showMessage('嘿，你找到了一顆籃球！拖著玩玩看吧！');
-            }
-
-            // 關閉彩蛋
-            closeBtn.addEventListener('click', () => {
-                ball.style.display = 'none';
-                closeBtn.style.display = 'none';
-                velocityX = 0;
-                velocityY = 0;
-                showMessage('籃球已關閉，再搜尋就能回來！');
-            });
-
-            // 拖動功能
-            ball.addEventListener('mousedown', (e) => {
-                isDragging = true;
-                velocityX = 0;
-                velocityY = 0;
-            });
-
-            document.addEventListener('mousemove', (e) => {
-                if (isDragging) {
-                    const ballSize = window.innerWidth <= 600 ? 60 : 100;
-                    posX = Math.max(0, Math.min(e.clientX - ballSize / 2, window.innerWidth - ballSize));
-                    posY = Math.max(0, Math.min(e.clientY - ballSize / 2, window.innerHeight - ballSize));
-                    rotation += 10;
-                    ball.style.left = posX + 'px';
-                    ball.style.top = posY + 'px';
-                    ball.style.transform = `rotate(${rotation}deg)`;
-                }
-            });
-
-            document.addEventListener('mouseup', (e) => {
-                if (isDragging) {
-                    isDragging = false;
-                    velocityX = (Math.random() - 0.5) * 10;
-                    velocityY = -10;
-                    animateBall();
-                    showMessage('哇，球飛出去啦！');
-                }
-            });
-
-            // 籃球彈跳
-            function animateBall() {
-                if (!isDragging && ball.style.display === 'block') {
-                    const ballSize = window.innerWidth <= 600 ? 60 : 100;
-                    velocityY += 0.5;
-                    posX += velocityX;
-                    posY += velocityY;
-                    rotation += velocityX;
-                    ball.style.transform = `rotate(${rotation}deg)`;
-
-                    if (posX <= 0) {
-                        posX = 0;
-                        velocityX = -velocityX * 0.8;
-                    }
-                    if (posX >= window.innerWidth - ballSize) {
-                        posX = window.innerWidth - ballSize;
-                        velocityX = -velocityX * 0.8;
-                    }
-                    if (posY >= window.innerHeight - ballSize) {
-                        posY = window.innerHeight - ballSize;
-                        velocityY = -velocityY * 0.6;
-                        velocityX *= 0.9;
-                    }
-                    if (posY <= 0) {
-                        posY = 0;
-                        velocityY = -velocityY * 0.8;
-                    }
-
-                    ball.style.left = posX + 'px';
-                    ball.style.top = posY + 'px';
-
-                    if (Math.abs(velocityY) > 0.1 || Math.abs(velocityX) > 0.1) {
-                        requestAnimationFrame(animateBall);
-                    } else {
-                        showMessage('球停下來了，拖一下再玩！');
-                    }
-                }
-            }
-
-            // 顯示訊息並淡出
-            function showMessage(text) {
-                message.textContent = text;
-                message.classList.add('show');
-                setTimeout(() => {
-                    message.classList.remove('show');
-                }, 2000);
-            }
-
-            // 視窗大小改變時調整位置
-            window.addEventListener('resize', () => {
-                if (ball.style.display === 'block') {
-                    const ballSize = window.innerWidth <= 600 ? 60 : 100;
-                    posX = Math.min(posX, window.innerWidth - ballSize);
-                    posY = Math.min(posY, window.innerHeight - ballSize);
-                    ball.style.left = posX + 'px';
-                    ball.style.top = posY + 'px';
-                }
-            });
         });
     </script>
 </body>
