@@ -200,7 +200,7 @@
 
         #software-list {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+            grid-template-columns: repeat(3, 1fr);
             gap: 1.5rem;
         }
 
@@ -296,6 +296,9 @@
                 flex: 1 1 8rem;
                 text-align: center;
             }
+            #software-list {
+                grid-template-columns: repeat(2, 1fr);
+            }
         }
 
         @media (max-width: 768px) {
@@ -380,9 +383,17 @@
             <h2>篩選類別</h2>
             <div class="category-list">
                 <button class="category-btn" onclick="goToCategory('all')" aria-label="所有軟體">所有軟體</button>
-                <button class="category-btn" onclick="goToCategory('開發工具')" aria-label="瀏覽開發工具">開發工具</button>
-                <button class="category-btn" onclick="goToCategory('多媒體')" aria-label="瀏覽多媒體">多媒體</button>
-                <button class="category-btn" onclick="goToCategory('系統工具')" aria-label="瀏覽系統工具">系統工具</button>
+                <button class="category-btn" onclick="goToCategory('開發工具與環境')" aria-label="瀏覽開發工具">開發工具與環境</button>
+                <button class="category-btn" onclick="goToCategory('開發者大會')" aria-label="瀏覽多媒體">開發者大會</button>
+                <button class="category-btn" onclick="goToCategory('社群與學習平台')" aria-label="瀏覽系統工具">社群與學習平台</button>
+                <button class="category-btn" onclick="goToCategory('台灣學生資源')" aria-label="瀏覽台灣學生資源">台灣學生資源</button>
+                <button class="category-btn" onclick="goToCategory('AI與機器學習')" aria-label="瀏覽AI與機器學習">AI與機器學習</button>
+                <button class="category-btn" onclick="goToCategory('Web開發相關')" aria-label="瀏覽Web開發相關">Web開發相關</button>
+                <button class="category-btn" onclick="goToCategory('數據與科學工具')" aria-label="瀏覽數據與科學工具">數據與科學工具</button>
+                <button class="category-btn" onclick="goToCategory('創作工具')" aria-label="瀏覽創作工具">創作工具</button>
+                <button class="category-btn" onclick="goToCategory('ACGN平台與社群')" aria-label="瀏覽ACGN平台與社群">ACGN平台與社群</button>
+                <button class="category-btn" onclick="goToCategory('二手周邊平台')" aria-label="瀏覽二手周邊平台">二手周邊平台</button>
+                <button class="category-btn" onclick="goToCategory('書店與通路')" aria-label="瀏覽書店與通路">書店與通路</button>
             </div>
         </aside>
         <main class="main-content">
