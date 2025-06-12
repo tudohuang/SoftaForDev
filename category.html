@@ -3,260 +3,278 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="探索並下載各類優質軟體 - 軟體下載中心">
     <title>軟體分類 - 軟體下載中心</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap">
     <style>
+        :root {
+            --primary: #6b21a8;
+            --primary-hover: #a855f7;
+            --background: #f3f4f6;
+            --card-bg: #ffffff;
+            --text: #1f2937;
+            --text-secondary: #4b5563;
+            --shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
         }
+
         body {
             min-height: 100vh;
             display: flex;
             flex-direction: column;
-            background: #f3f4f6;
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
-            color: #1f2937;
-            line-height: 1.6;
+            background: var(--background);
+            font-family: 'Noto Sans TC', sans-serif;
+            color: var(--text);
+            line-height: 1.5;
         }
+
         .navbar {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 20px 5%;
-            background: #ffffff;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            padding: 1rem 5%;
+            background: var(--card-bg);
+            box-shadow: var(--shadow);
             position: sticky;
             top: 0;
             z-index: 100;
         }
+
         .logo {
             display: flex;
             align-items: center;
-            gap: 12px;
-            font-size: 1.8rem;
-            font-weight: 600;
-            color: #6b21a8;
+            gap: 0.75rem;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
         }
+
         .nav-links a {
-            color: #6b21a8;
-            font-weight: 600;
-            margin: 0 15px;
+            color: var(--primary);
+            font-weight: 500;
+            margin: 0 0.75rem;
             text-decoration: none;
-            font-size: 1.1rem;
-            transition: color 0.3s ease, transform 0.2s ease;
+            font-size: 1rem;
+            transition: var(--transition);
         }
+
         .nav-links a:hover, .nav-links a:focus {
-            color: #a855f7;
+            color: var(--primary-hover);
             transform: translateY(-2px);
         }
+
         .hero {
-            padding: 80px 5%;
-            background: linear-gradient(135deg, #6b21a8 0%, #a855f7 100%);
+            padding: clamp(3rem, 8vw, 5rem) 5%;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-hover) 100%);
             color: #ffffff;
             text-align: center;
             position: relative;
-            overflow: hidden;
-            animation: slideInLeft 1s ease-in-out;
         }
+
         .hero::after {
             content: '';
             position: absolute;
             bottom: 0;
             left: 0;
             right: 0;
-            height: 60px;
+            height: 3rem;
             background: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none"%3E%3Cpath fill="%23ffffff" d="M0,100 L500,0 L1000,100 Z"/%3E%3C/svg%3E') no-repeat bottom;
             background-size: cover;
         }
+
         .hero h1 {
-            font-size: 2.5rem;
+            font-size: clamp(1.75rem, 5vw, 2.5rem);
             font-weight: 700;
-            margin-bottom: 15px;
+            margin-bottom: 0.75rem;
         }
+
         .hero .subtitle {
-            font-size: 1.2rem;
+            font-size: clamp(0.9rem, 3vw, 1.1rem);
             color: #e9d5ff;
-            margin-bottom: 20px;
+            margin-bottom: 1rem;
         }
+
         .search-container {
             display: flex;
             justify-content: center;
-            gap: 10px;
-            margin-top: 20px;
-            animation: slideInLeft 1s ease-in-out 0.2s;
-            animation-fill-mode: both;
+            gap: 0.5rem;
+            margin-top: 1.25rem;
         }
+
         #search {
-            padding: 12px;
+            padding: 0.75rem;
             font-size: 1rem;
-            width: 400px;
-            max-width: 100%;
+            width: clamp(12rem, 50vw, 25rem);
             border: 1px solid #d8b4fe;
-            border-radius: 6px;
+            border-radius: 0.375rem;
             outline: none;
             background: #ffffff;
-            transition: border-color 0.3s, box-shadow 0.3s;
+            transition: var(--transition);
         }
+
         #search:focus {
-            border-color: #a855f7;
+            border-color: var(--primary-hover);
             box-shadow: 0 0 0 4px rgba(168, 85, 247, 0.2);
         }
+
         #search-btn {
-            padding: 12px 24px;
+            padding: 0.75rem 1.5rem;
             font-size: 1rem;
-            background: #6b21a8;
+            background: var(--primary);
             color: #ffffff;
             border: none;
-            border-radius: 6px;
+            border-radius: 0.375rem;
             cursor: pointer;
-            transition: background 0.3s, transform 0.2s;
+            transition: var(--transition);
         }
+
         #search-btn:hover, #search-btn:focus {
-            background: #a855f7;
+            background: var(--primary-hover);
             transform: translateY(-2px);
         }
+
         .container {
             max-width: 1400px;
             margin: 0 auto;
-            padding: 40px 5%;
+            padding: 2rem 5%;
             display: flex;
-            gap: 30px;
-            animation: slideInLeft 1s ease-in-out 0.4s;
-            animation-fill-mode: both;
+            gap: 1.5rem;
         }
+
         .sidebar {
-            flex: 0 0 250px;
-            background: #ffffff;
-            border-radius: 8px;
-            padding: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            flex: 0 0 15rem;
+            background: var(--card-bg);
+            border-radius: 0.5rem;
+            padding: 1.25rem;
+            box-shadow: var(--shadow);
         }
+
         .sidebar h2 {
-            font-size: 1.5rem;
-            font-weight: 600;
-            color: #1f2937;
-            margin-bottom: 15px;
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
         }
+
         .category-list {
             display: flex;
             flex-direction: column;
-            gap: 10px;
+            gap: 0.5rem;
         }
+
         .category-btn {
-            padding: 10px 15px;
-            background: #6b21a8;
+            padding: 0.5rem 0.75rem;
+            background: var(--primary);
             color: #ffffff;
             border: none;
-            border-radius: 6px;
+            border-radius: 0.375rem;
             font-size: 0.95rem;
-            font-weight: 600;
+            font-weight: 500;
             cursor: pointer;
             text-align: left;
-            transition: background 0.3s, transform 0.2s;
+            transition: var(--transition);
         }
+
         .category-btn:hover, .category-btn:focus {
-            background: #a855f7;
+            background: var(--primary-hover);
             transform: translateX(5px);
         }
+
         .main-content {
             flex: 1;
         }
+
         #software-list {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            max-width: 100%;
-            margin-top: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+            gap: 1.25rem;
+            margin-top: 1.25rem;
         }
+
         .software-item {
-            background: #ffffff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s, box-shadow 0.3s;
+            background: var(--card-bg);
+            padding: 1.25rem;
+            border-radius: 0.5rem;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            border-left: 4px solid var(--primary-hover);
+            min-height: 18rem;
             display: flex;
             flex-direction: column;
-            border-left: 4px solid #a855f7;
-            min-height: 300px;
         }
+
         .software-item:hover {
             transform: translateY(-5px);
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
         }
+
         .software-logo {
-            width: 80px;
-            height: 80px;
+            width: 5rem;
+            height: 5rem;
             object-fit: contain;
-            margin: 0 auto 15px;
+            margin: 0 auto 0.75rem;
+            loading: lazy;
         }
+
         .software-item h2 {
-            font-size: 1.25rem;
+            font-size: 1.1rem;
             font-weight: 600;
-            color: #1f2937;
-            margin-bottom: 10px;
+            margin-bottom: 0.5rem;
         }
+
         .software-item p {
             font-size: 0.9rem;
-            color: #4b5563;
+            color: var(--text-secondary);
             flex-grow: 1;
-            margin-bottom: 15px;
+            margin-bottom: 0.75rem;
         }
+
         .button-group {
             display: flex;
             justify-content: center;
-            gap: 10px;
+            gap: 0.5rem;
         }
+
         .software-item a {
-            padding: 8px 12px;
+            padding: 0.5rem 0.75rem;
             font-size: 0.85rem;
-            font-weight: 600;
+            font-weight: 500;
             color: #ffffff;
-            background: #6b21a8;
-            border-radius: 6px;
+            background: var(--primary);
+            border-radius: 0.375rem;
             text-decoration: none;
-            transition: background 0.3s, transform 0.2s;
+            transition: var(--transition);
         }
+
         .software-item a:hover, .software-item a:focus {
-            background: #a855f7;
+            background: var(--primary-hover);
             transform: translateY(-2px);
         }
-        .featured {
-            padding: 60px 5%;
-            text-align: center;
-            background: #ffffff;
-        }
-        .featured h2 {
-            font-size: 2rem;
-            font-weight: 600;
-            color: #1f2937;
-            margin-bottom: 30px;
-            animation: slideInLeft 1s ease-in-out;
-        }
-        #featured-software {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            animation: slideInLeft 1s ease-in-out 0.2s;
-            animation-fill-mode: both;
-        }
+
         footer {
-            padding: 25px;
+            padding: 1.5rem;
             text-align: center;
             background: #111827;
             color: #ffffff;
-            font-size: 0.95rem;
+            font-size: 0.9rem;
             margin-top: auto;
         }
-        @keyframes slideInLeft {
-            from { opacity: 0; transform: translateX(-20px); }
-            to { opacity: 1; transform: translateX(0); }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
         }
-        /* Responsive Design */
+
+        .fade-in {
+            animation: fadeIn 0.6s ease-out forwards;
+        }
+
         @media (max-width: 1024px) {
             .container {
                 flex-direction: column;
@@ -269,87 +287,64 @@
                 flex-direction: row;
                 flex-wrap: wrap;
                 justify-content: center;
+                gap: 0.75rem;
             }
             .category-btn {
                 text-align: center;
-            }
-            .hero h1 {
-                font-size: 2rem;
-            }
-            .hero .subtitle {
-                font-size: 1.1rem;
-            }
-            #search {
-                width: 300px;
-            }
-            #search-btn {
-                padding: 10px 20px;
-            }
-            #software-list, #featured-software {
-                grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+                flex: 1 1 auto;
             }
         }
+
         @media (max-width: 768px) {
             .navbar {
                 flex-direction: column;
-                gap: 15px;
-                padding: 15px 5%;
+                gap: 0.75rem;
+                padding: 1rem 5%;
             }
             .nav-links a {
-                margin: 8px 10px;
+                margin: 0.5rem;
             }
-            .hero {
-                padding: 60px 5%;
-            }
-            #search {
-                width: 250px;
-            }
-            #software-list, #featured-software {
+            #software-list {
                 grid-template-columns: 1fr;
             }
         }
+
         @media (max-width: 480px) {
             .hero h1 {
-                font-size: 1.75rem;
+                font-size: 1.5rem;
             }
             .hero .subtitle {
-                font-size: 1rem;
+                font-size: 0.9rem;
             }
             #search {
-                width: 200px;
+                width: 100%;
                 font-size: 0.9rem;
             }
             #search-btn {
-                padding: 8px 16px;
+                padding: 0.5rem 1rem;
                 font-size: 0.9rem;
-            }
-            .category-btn {
-                padding: 8px 12px;
-                font-size: 0.9rem;
-            }
-            .sidebar h2 {
-                font-size: 1.25rem;
             }
         }
+
         ::-webkit-scrollbar {
-            width: 10px;
+            width: 8px;
         }
         ::-webkit-scrollbar-track {
-            background: #f3f4f6;
-            border-radius: 10px;
+            background: var(--background);
+            border-radius: 8px;
         }
         ::-webkit-scrollbar-thumb {
-            background: #4b5563;
-            border-radius: 10px;
-            border: 2px solid #f3f4f6;
+            background: var(--text-secondary);
+            border-radius: 8px;
+            border: 2px solid var(--background);
         }
         ::-webkit-scrollbar-thumb:hover {
-            background: #6b21a8;
+            background: var(--primary);
         }
     </style>
 </head>
 <body>
-    <nav class="navbar">
+    <nav class="navbar fade-in">
         <div class="logo">
             <i class="fas fa-download"></i> Software Hub
         </div>
@@ -360,17 +355,16 @@
         </div>
     </nav>
 
-    <header class="hero">
+    <header class="hero fade-in">
         <h1 id="category-title">軟體分類</h1>
-        <p class="subtitle">點擊軟體 Logo 查看詳細資訊</p>
+        <p class="subtitle">探索並下載各類優質軟體</p>
         <div class="search-container">
             <input type="text" id="search" placeholder="搜尋軟體，例如 VS Code, Python" aria-label="搜尋軟體">
             <button id="search-btn" aria-label="搜尋"><i class="fas fa-search"></i> 搜尋</button>
         </div>
     </header>
 
-    <div class="container">
-        <!--
+    <div class="container fade-in">
         <aside class="sidebar">
             <h2>篩選類別</h2>
             <div class="category-list">
@@ -380,15 +374,12 @@
                 <button class="category-btn" onclick="goToCategory('系統工具')" aria-label="瀏覽系統工具">系統工具</button>
             </div>
         </aside>
-        -->
         <div class="main-content">
             <div id="software-list"></div>
         </div>
     </div>
 
-
-
-    <footer>
+    <footer class="fade-in">
         <p>© 2025 Software Hub - All Rights Reserved</p>
     </footer>
 
@@ -398,7 +389,6 @@
             const searchBtn = document.getElementById('search-btn');
             const categoryTitle = document.getElementById('category-title');
             const softwareList = document.getElementById('software-list');
-            const featuredSoftware = document.getElementById('featured-software');
 
             // Get URL parameters
             const urlParams = new URLSearchParams(window.location.search);
@@ -406,62 +396,51 @@
             const searchQuery = urlParams.get('search');
             const showAll = urlParams.get('query') === 'all';
 
-            // Set page title and filter software
+            // Set page title
             let title = '所有軟體';
-            if (categoryType) {
-                title = categoryType;
-            } else if (searchQuery) {
-                title = `搜尋 "${searchQuery}" 的結果`;
-            }
+            if (categoryType) title = categoryType;
+            else if (searchQuery) title = `搜尋 "${searchQuery}" 的結果`;
             categoryTitle.textContent = title;
             document.title = `${title} - 軟體下載中心`;
 
             // Fetch and display software
-            fetch(`data.json?t=${new Date().getTime()}`)
-                .then(response => {
+            async function loadSoftware() {
+                try {
+                    const response = await fetch(`data.json?t=${Date.now()}`);
                     if (!response.ok) throw new Error('無法載入軟體資料');
-                    return response.json();
-                })
-                .then(data => {
-                    console.log('✅ 成功讀取 JSON:', data);
+                    const data = await response.json();
 
-                    // Filter software based on parameters
+                    // Filter software
                     let filteredData = data;
                     if (categoryType && categoryType !== 'all') {
-                        filteredData = data.filter(software => software.category === categoryType);
+                        filteredData = data.filter(s => s.category === categoryType);
                     } else if (searchQuery) {
-                        filteredData = data.filter(software =>
-                            software.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                            software.description.toLowerCase().includes(searchQuery.toLowerCase())
+                        const query = searchQuery.toLowerCase();
+                        filteredData = data.filter(s =>
+                            s.name.toLowerCase().includes(query) ||
+                            s.description.toLowerCase().includes(query)
                         );
                     }
 
-                    // Render filtered software
+                    // Render software
                     renderSoftware(filteredData, softwareList, '無符合條件的軟體');
-
-                    // Render random featured software
-                    const shuffledData = data.sort(() => Math.random() - 0.5);
-                    const featuredData = shuffledData.slice(0, 6);
-                    renderSoftware(featuredData, featuredSoftware, '暫無精選軟體');
-                })
-                .catch(error => {
+                } catch (error) {
                     console.error('❌ 讀取 JSON 失敗:', error);
                     softwareList.innerHTML = '<p style="text-align:center;color:#dc2626;">無法載入軟體資料，請稍後再試。</p>';
-                    featuredSoftware.innerHTML = '<p style="text-align:center;color:#dc2626;">無法載入精選軟體，請稍後再試。</p>';
-                });
+                }
+            }
 
-            function renderSoftware(data, targetElement, emptyMessage) {
-                if (!targetElement) return;
-                targetElement.innerHTML = '';
+            function renderSoftware(data, target, emptyMessage) {
+                target.innerHTML = '';
                 if (data.length === 0) {
-                    targetElement.innerHTML = `<p style="text-align:center;color:#4b5563;">${emptyMessage}</p>`;
+                    target.innerHTML = `<p style="text-align:center;color:var(--text-secondary);">${emptyMessage}</p>`;
                     return;
                 }
                 data.forEach(software => {
                     const div = document.createElement('div');
-                    div.classList.add('software-item');
+                    div.classList.add('software-item', 'fade-in');
                     div.innerHTML = `
-                        <img src="${software.logo}" alt="${software.name} Logo" class="software-logo">
+                        <img src="${software.logo}" alt="${software.name} Logo" class="software-logo" loading="lazy">
                         <h2>${software.name}</h2>
                         <p>${software.description}</p>
                         <div class="button-group">
@@ -469,18 +448,16 @@
                             <a href="${software.download}" target="_blank" aria-label="下載${software.name}">下載</a>
                         </div>
                     `;
-                    targetElement.appendChild(div);
+                    target.appendChild(div);
                 });
             }
 
             // Search functionality
             searchBtn.addEventListener('click', () => {
                 const query = searchInput.value.trim();
-                if (query) {
-                    window.location.href = `category.html?search=${encodeURIComponent(query)}`;
-                } else {
-                    window.location.href = 'category.html?query=all';
-                }
+                window.location.href = query
+                    ? `category.html?search=${encodeURIComponent(query)}`
+                    : 'category.html?query=all';
             });
 
             searchInput.addEventListener('keypress', e => {
@@ -488,9 +465,12 @@
             });
 
             // Category navigation
-            window.goToCategory = function(category) {
+            window.goToCategory = category => {
                 window.location.href = `category.html?type=${encodeURIComponent(category)}`;
             };
+
+            // Load software on page load
+            loadSoftware();
         });
     </script>
 </body>
