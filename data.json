@@ -1,860 +1,1186 @@
 [
     {
-        "name": "Visual Studio Code",
-        "category": "開發工具與環境",
-        "description": "輕量級但功能強大的程式碼編輯器，支援多種擴充功能。",
-        "logo": "https://code.visualstudio.com/assets/images/code-stable.png",
-        "website": "https://code.visualstudio.com/",
-        "download": ""
-    },
-    {
-        "name": "PyCharm",
-        "category": "開發工具與環境",
-        "description": "JetBrains 出品的專業 Python IDE，擁有強大的代碼補全和除錯功能。",
-        "logo": "https://resources.jetbrains.com/storage/products/pycharm/img/meta/pycharm_logo_300x300.png",
-        "website": "https://www.jetbrains.com/pycharm/",
-        "download": ""
-    },
-    {
-        "name": "Arduino IDE",
-        "category": "開發工具與環境",
-        "description": "官方開發環境，用於編寫和上傳 Arduino 程式。",
-        "logo": "https://www.arduino.cc/en/uploads/Trademark/ArduinoCommunityLogo.png",
-        "website": "https://www.arduino.cc/en/software",
-        "download": ""
-    },
-    {
-        "name": "ESP-IDF",
-        "category": "開發工具與環境",
-        "description": "ESP32 官方開發框架，適用於 IoT 和嵌入式開發。",
-        "logo": "https://docs.espressif.com/projects/esp-idf/en/latest/_static/espressif-logo.svg",
-        "website": "https://docs.espressif.com/projects/esp-idf/en/latest/esp32/",
-        "download": ""
-    },
-    {
-        "name": "KiCad",
-        "category": "開發工具與環境",
-        "description": "免費開源的電子設計自動化 (EDA) 軟體，適用於 PCB 設計。",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/KiCad-Logo.svg/120px-KiCad-Logo.svg.png",
-        "website": "https://www.kicad.org/",
-        "download": ""
-    },
-    {
-        "name": "Dev-C++",
-        "category": "開發工具與環境",
-        "description": "適用於 Windows 的輕量級 C/C++ 開發環境。",
-        "logo": "https://store-images.s-microsoft.com/image/apps.8200.14525614036320964.388ccdd1-65a9-4bfc-81ce-c614493bcc79.5dfc4719-b603-45a1-a73e-bf55d9d25077",
-        "website": "https://sourceforge.net/projects/orwelldevcpp/",
-        "download": ""
-    },
-    {
-        "name": "Code::Blocks",
-        "category": "開發工具與環境",
-        "description": "跨平台 C/C++ IDE，支援多種編譯器。",
-        "logo": "https://wiki.codeblocks.org/images/c/c7/Cb_splash.png",
-        "website": "https://www.codeblocks.org/",
-        "download": ""
-    },
-    {
-        "name": "PlatformIO",
-        "category": "開發工具與環境",
-        "description": "嵌入式開發生態系統，支援 Arduino、ESP32、STM32 等。",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/PlatformIO_logo.svg/1200px-PlatformIO_logo.svg.png",
-        "website": "https://platformio.org/",
-        "download": ""
-    },
-    {
-        "name": "WebStorm",
-        "category": "開發工具與環境",
-        "description": "JetBrains 出品的專業 JavaScript & Web IDE。",
-        "logo": "https://resources.jetbrains.com/storage/products/webstorm/img/meta/webstorm_logo_300x300.png",
-        "website": "https://www.jetbrains.com/webstorm/",
-        "download": ""
-    },
-    {
-        "name": "Processing",
-        "category": "開發工具與環境",
-        "description": "適用於視覺設計、互動藝術與創意程式設計的開發環境。",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Processing_2021_logo.svg/180px-Processing_2021_logo.svg.png",
-        "website": "https://processing.org/",
-        "download": ""
-    },
-    {
-        "name": "ModelSim",
-        "category": "開發工具與環境",
-        "description": "高效能 Verilog / VHDL 模擬器，適用於 FPGA/ASIC 設計與測試。",
-        "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKUzEO2v6gyztVs8h_xEgZLfHulxPBLrtyzQ&s",
-        "website": "https://www.mentor.com/products/fpga/model-sim/",
-        "download": ""
-    },
-    {
-        "name": "C",
-        "category": "開發工具與環境",
-        "description": "系統程式語言，適用於嵌入式、作業系統開發。",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png",
-        "website": "https://en.cppreference.com/w/c",
-        "download": ""
-    },
-    {
-        "name": "C++",
-        "category": "開發工具與環境",
-        "description": "強大的物件導向與系統程式語言，適用於遊戲與高效能開發。",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg",
-        "website": "https://isocpp.org/",
-        "download": ""
+        "name":"Visual Studio Code",
+        "category":"開發工具與環境",
+        "description":"輕量級但功能強大的程式碼編輯器，支援多種擴充功能。",
+        "logo":"https:\/\/code.visualstudio.com\/assets\/images\/code-stable.png",
+        "website":"https:\/\/code.visualstudio.com\/",
+        "download":""
+    },
+    {
+        "name":"PyCharm",
+        "category":"開發工具與環境",
+        "description":"JetBrains 出品的專業 Python IDE，擁有強大的代碼補全和除錯功能。",
+        "logo":"https:\/\/resources.jetbrains.com\/storage\/products\/pycharm\/img\/meta\/pycharm_logo_300x300.png",
+        "website":"https:\/\/www.jetbrains.com\/pycharm\/",
+        "download":""
+    },
+    {
+        "name":"Arduino IDE",
+        "category":"開發工具與環境",
+        "description":"官方開發環境，用於編寫和上傳 Arduino 程式。",
+        "logo":"https:\/\/www.arduino.cc\/en\/uploads\/Trademark\/ArduinoCommunityLogo.png",
+        "website":"https:\/\/www.arduino.cc\/en\/software",
+        "download":""
+    },
+    {
+        "name":"ESP-IDF",
+        "category":"開發工具與環境",
+        "description":"ESP32 官方開發框架，適用於 IoT 和嵌入式開發。",
+        "logo":"https:\/\/docs.espressif.com\/projects\/esp-idf\/en\/latest\/_static\/espressif-logo.svg",
+        "website":"https:\/\/docs.espressif.com\/projects\/esp-idf\/en\/latest\/esp32\/",
+        "download":""
+    },
+    {
+        "name":"KiCad",
+        "category":"開發工具與環境",
+        "description":"免費開源的電子設計自動化 (EDA) 軟體，適用於 PCB 設計。",
+        "logo":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/5\/59\/KiCad-Logo.svg\/120px-KiCad-Logo.svg.png",
+        "website":"https:\/\/www.kicad.org\/",
+        "download":""
+    },
+    {
+        "name":"Dev-C++",
+        "category":"開發工具與環境",
+        "description":"適用於 Windows 的輕量級 C\/C++ 開發環境。",
+        "logo":"https:\/\/store-images.s-microsoft.com\/image\/apps.8200.14525614036320964.388ccdd1-65a9-4bfc-81ce-c614493bcc79.5dfc4719-b603-45a1-a73e-bf55d9d25077",
+        "website":"https:\/\/sourceforge.net\/projects\/orwelldevcpp\/",
+        "download":""
+    },
+    {
+        "name":"Code::Blocks",
+        "category":"開發工具與環境",
+        "description":"跨平台 C\/C++ IDE，支援多種編譯器。",
+        "logo":"https:\/\/wiki.codeblocks.org\/images\/c\/c7\/Cb_splash.png",
+        "website":"https:\/\/www.codeblocks.org\/",
+        "download":""
+    },
+    {
+        "name":"PlatformIO",
+        "category":"開發工具與環境",
+        "description":"嵌入式開發生態系統，支援 Arduino、ESP32、STM32 等。",
+        "logo":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/c\/cd\/PlatformIO_logo.svg\/1200px-PlatformIO_logo.svg.png",
+        "website":"https:\/\/platformio.org\/",
+        "download":""
+    },
+    {
+        "name":"WebStorm",
+        "category":"開發工具與環境",
+        "description":"JetBrains 出品的專業 JavaScript & Web IDE。",
+        "logo":"https:\/\/resources.jetbrains.com\/storage\/products\/webstorm\/img\/meta\/webstorm_logo_300x300.png",
+        "website":"https:\/\/www.jetbrains.com\/webstorm\/",
+        "download":""
+    },
+    {
+        "name":"Processing",
+        "category":"開發工具與環境",
+        "description":"適用於視覺設計、互動藝術與創意程式設計的開發環境。",
+        "logo":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/c\/cb\/Processing_2021_logo.svg\/180px-Processing_2021_logo.svg.png",
+        "website":"https:\/\/processing.org\/",
+        "download":""
+    },
+    {
+        "name":"ModelSim",
+        "category":"開發工具與環境",
+        "description":"高效能 Verilog \/ VHDL 模擬器，適用於 FPGA\/ASIC 設計與測試。",
+        "logo":"https:\/\/encrypted-tbn0.gstatic.com\/images?q=tbn:ANd9GcSKUzEO2v6gyztVs8h_xEgZLfHulxPBLrtyzQ&s",
+        "website":"https:\/\/www.mentor.com\/products\/fpga\/model-sim\/",
+        "download":""
+    },
+    {
+        "name":"C",
+        "category":"開發工具與環境",
+        "description":"系統程式語言，適用於嵌入式、作業系統開發。",
+        "logo":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/1\/19\/C_Logo.png",
+        "website":"https:\/\/en.cppreference.com\/w\/c",
+        "download":""
+    },
+    {
+        "name":"C++",
+        "category":"開發工具與環境",
+        "description":"強大的物件導向與系統程式語言，適用於遊戲與高效能開發。",
+        "logo":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/1\/18\/ISO_C%2B%2B_Logo.svg",
+        "website":"https:\/\/isocpp.org\/",
+        "download":""
     },
     {
-        "name": "C#",
-        "category": "開發工具與環境",
-        "description": "微軟開發的強大物件導向語言，適用於 .NET 開發。",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Csharp_Logo.png",
-        "website": "https://learn.microsoft.com/en-us/dotnet/csharp/",
-        "download": ""
+        "name":"C#",
+        "category":"開發工具與環境",
+        "description":"微軟開發的強大物件導向語言，適用於 .NET 開發。",
+        "logo":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/4\/4f\/Csharp_Logo.png",
+        "website":"https:\/\/learn.microsoft.com\/en-us\/dotnet\/csharp\/",
+        "download":""
     },
     {
-        "name": "Objective-C",
-        "category": "開發工具與環境",
-        "description": "Apple 早期主要語言，仍用於 macOS / iOS 開發。",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Objective-C_logo.png",
-        "website": "https://developer.apple.com/documentation/objectivec",
-        "download": ""
+        "name":"Objective-C",
+        "category":"開發工具與環境",
+        "description":"Apple 早期主要語言，仍用於 macOS \/ iOS 開發。",
+        "logo":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/6\/6a\/Objective-C_logo.png",
+        "website":"https:\/\/developer.apple.com\/documentation\/objectivec",
+        "download":""
     },
     {
-        "name": "D Language",
-        "category": "開發工具與環境",
-        "description": "C++ 的現代替代語言，適用於高效能系統開發。",
-        "logo": "https://dlang.org/images/dlogo.svg",
-        "website": "https://dlang.org/",
-        "download": ""
+        "name":"D Language",
+        "category":"開發工具與環境",
+        "description":"C++ 的現代替代語言，適用於高效能系統開發。",
+        "logo":"https:\/\/dlang.org\/images\/dlogo.svg",
+        "website":"https:\/\/dlang.org\/",
+        "download":""
     },
     {
-        "name": "CMake",
-        "category": "開發工具與環境",
-        "description": "跨平台的 C++ 構建工具，廣泛用於軟體編譯與部署。",
-        "logo": "https://cmake.org/cmake/resources/logo/logo.svg",
-        "website": "https://cmake.org/",
-        "download": ""
+        "name":"CMake",
+        "category":"開發工具與環境",
+        "description":"跨平台的 C++ 構建工具，廣泛用於軟體編譯與部署。",
+        "logo":"https:\/\/cmake.org\/cmake\/resources\/logo\/logo.svg",
+        "website":"https:\/\/cmake.org\/",
+        "download":""
     },
     {
-        "name": "Emscripten",
-        "category": "開發工具與環境",
-        "description": "將 C/C++ 編譯為 WebAssembly，讓 C++ 可在瀏覽器執行。",
-        "logo": "https://emscripten.org/assets/Emscripten-Logo.svg",
-        "website": "https://emscripten.org/",
-        "download": ""
+        "name":"Emscripten",
+        "category":"開發工具與環境",
+        "description":"將 C\/C++ 編譯為 WebAssembly，讓 C++ 可在瀏覽器執行。",
+        "logo":"https:\/\/emscripten.org\/assets\/Emscripten-Logo.svg",
+        "website":"https:\/\/emscripten.org\/",
+        "download":""
     },
     {
-        "name": "Java",
-        "category": "開發工具與環境",
-        "description": "跨平台的物件導向語言，適用於企業級應用、Android。",
-        "logo": "https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg",
-        "website": "https://www.java.com/",
-        "download": ""
+        "name":"Java",
+        "category":"開發工具與環境",
+        "description":"跨平台的物件導向語言，適用於企業級應用、Android。",
+        "logo":"https:\/\/upload.wikimedia.org\/wikipedia\/en\/3\/30\/Java_programming_language_logo.svg",
+        "website":"https:\/\/www.java.com\/",
+        "download":""
     },
     {
-        "name": "Groovy",
-        "category": "開發工具與環境",
-        "description": "運行於 JVM 的動態語言，適用於 Gradle、Spring Boot。",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/3/36/Groovy-logo.svg",
-        "website": "https://groovy-lang.org/",
-        "download": ""
+        "name":"Groovy",
+        "category":"開發工具與環境",
+        "description":"運行於 JVM 的動態語言，適用於 Gradle、Spring Boot。",
+        "logo":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/3\/36\/Groovy-logo.svg",
+        "website":"https:\/\/groovy-lang.org\/",
+        "download":""
     },
     {
-        "name": "Clojure",
-        "category": "開發工具與環境",
-        "description": "基於 JVM 的函數式語言，適用於資料處理。",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Clojure_logo.svg",
-        "website": "https://clojure.org/",
-        "download": ""
+        "name":"Clojure",
+        "category":"開發工具與環境",
+        "description":"基於 JVM 的函數式語言，適用於資料處理。",
+        "logo":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/5\/5d\/Clojure_logo.svg",
+        "website":"https:\/\/clojure.org\/",
+        "download":""
     },
     {
-        "name": "JavaScript",
-        "category": "開發工具與環境",
-        "description": "Web 開發的核心語言，可用於前端和後端。",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
-        "website": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
-        "download": ""
+        "name":"JavaScript",
+        "category":"開發工具與環境",
+        "description":"Web 開發的核心語言，可用於前端和後端。",
+        "logo":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/6\/6a\/JavaScript-logo.png",
+        "website":"https:\/\/developer.mozilla.org\/en-US\/docs\/Web\/JavaScript",
+        "download":""
     },
     {
-        "name": "TypeScript",
-        "category": "開發工具與環境",
-        "description": "JavaScript 的超集，提供強大的型別支援。",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg",
-        "website": "https://www.typescriptlang.org/",
-        "download": ""
+        "name":"TypeScript",
+        "category":"開發工具與環境",
+        "description":"JavaScript 的超集，提供強大的型別支援。",
+        "logo":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/4\/4c\/Typescript_logo_2020.svg",
+        "website":"https:\/\/www.typescriptlang.org\/",
+        "download":""
     },
     {
-        "name": "Node.js",
-        "category": "開發工具與環境",
-        "description": "基於 V8 引擎的 JavaScript 後端運行環境。",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png",
-        "website": "https://nodejs.org/",
-        "download": ""
+        "name":"Node.js",
+        "category":"開發工具與環境",
+        "description":"基於 V8 引擎的 JavaScript 後端運行環境。",
+        "logo":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/d\/d9\/Node.js_logo.svg\/1200px-Node.js_logo.svg.png",
+        "website":"https:\/\/nodejs.org\/",
+        "download":""
     },
     {
-        "name": "HTML",
-        "category": "開發工具與環境",
-        "description": "超文本標記語言，Web 前端的基礎技術。",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg",
-        "website": "https://developer.mozilla.org/en-US/docs/Web/HTML",
-        "download": ""
+        "name":"HTML",
+        "category":"開發工具與環境",
+        "description":"超文本標記語言，Web 前端的基礎技術。",
+        "logo":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/6\/61\/HTML5_logo_and_wordmark.svg",
+        "website":"https:\/\/developer.mozilla.org\/en-US\/docs\/Web\/HTML",
+        "download":""
     },
     {
-        "name": "CSS",
-        "category": "開發工具與環境",
-        "description": "層疊樣式表，負責 Web 網頁的外觀與佈局。",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg",
-        "website": "https://developer.mozilla.org/en-US/docs/Web/CSS",
-        "download": ""
+        "name":"CSS",
+        "category":"開發工具與環境",
+        "description":"層疊樣式表，負責 Web 網頁的外觀與佈局。",
+        "logo":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/d\/d5\/CSS3_logo_and_wordmark.svg",
+        "website":"https:\/\/developer.mozilla.org\/en-US\/docs\/Web\/CSS",
+        "download":""
     },
     {
-        "name": "SQL",
-        "category": "開發工具與環境",
-        "description": "用於操作關聯式資料庫（MySQL、PostgreSQL）。",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png",
-        "website": "https://www.w3schools.com/sql/",
-        "download": ""
+        "name":"SQL",
+        "category":"開發工具與環境",
+        "description":"用於操作關聯式資料庫（MySQL、PostgreSQL）。",
+        "logo":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/8\/87\/Sql_data_base_with_logo.png",
+        "website":"https:\/\/www.w3schools.com\/sql\/",
+        "download":""
     },
     {
-        "name": "Python",
-        "category": "開發工具與環境",
-        "description": "易學易用，適合資料分析、AI、Web 開發。",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/800px-Python-logo-notext.svg.png",
-        "website": "https://www.python.org/",
-        "download": ""
+        "name":"Python",
+        "category":"開發工具與環境",
+        "description":"易學易用，適合資料分析、AI、Web 開發。",
+        "logo":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/c\/c3\/Python-logo-notext.svg\/800px-Python-logo-notext.svg.png",
+        "website":"https:\/\/www.python.org\/",
+        "download":""
     },
     {
-        "name": "Rust",
-        "category": "開發工具與環境",
-        "description": "高效能、內存安全的系統語言，適用於低階開發。",
-        "logo": "https://www.rust-lang.org/static/images/rust-logo-blk.svg",
-        "website": "https://www.rust-lang.org/",
-        "download": ""
+        "name":"Rust",
+        "category":"開發工具與環境",
+        "description":"高效能、內存安全的系統語言，適用於低階開發。",
+        "logo":"https:\/\/www.rust-lang.org\/static\/images\/rust-logo-blk.svg",
+        "website":"https:\/\/www.rust-lang.org\/",
+        "download":""
     },
     {
-        "name": "Go (Golang)",
-        "category": "開發工具與環境",
-        "description": "Google 開發的高效能後端語言，適用於微服務。",
-        "logo": "https://go.dev/images/go-logo-blue.svg",
-        "website": "https://go.dev/",
-        "download": ""
+        "name":"Go (Golang)",
+        "category":"開發工具與環境",
+        "description":"Google 開發的高效能後端語言，適用於微服務。",
+        "logo":"https:\/\/go.dev\/images\/go-logo-blue.svg",
+        "website":"https:\/\/go.dev\/",
+        "download":""
     },
     {
-        "name": "Google I/O",
-        "category": "開發者大會",
-        "description": "Google 開發者大會，涵蓋 AI、雲端、Android、Flutter。",
-        "logo": "https://io.google/2025/assets/images/Logo-white.svg",
-        "website": "https://io.google/",
-        "download": ""
+        "name":"Google I\/O",
+        "category":"開發者大會",
+        "description":"Google 開發者大會，涵蓋 AI、雲端、Android、Flutter。",
+        "logo":"https:\/\/io.google\/2025\/assets\/images\/Logo-white.svg",
+        "website":"https:\/\/io.google\/",
+        "download":""
     },
     {
-        "name": "Microsoft Build",
-        "category": "開發者大會",
-        "description": "微軟開發者年度大會，聚焦於 .NET、Azure、VS Code。",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg",
-        "website": "https://build.microsoft.com/",
-        "download": ""
+        "name":"Microsoft Build",
+        "category":"開發者大會",
+        "description":"微軟開發者年度大會，聚焦於 .NET、Azure、VS Code。",
+        "logo":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/4\/44\/Microsoft_logo.svg",
+        "website":"https:\/\/build.microsoft.com\/",
+        "download":""
     },
     {
-        "name": "Apple WWDC",
-        "category": "開發者大會",
-        "description": "Apple 開發者大會，涵蓋 iOS、macOS、Xcode、Swift。",
-        "logo": "https://developer.apple.com/wwdc24/images/masthead-24.svg",
-        "website": "https://developer.apple.com/wwdc/",
-        "download": ""
+        "name":"Apple WWDC",
+        "category":"開發者大會",
+        "description":"Apple 開發者大會，涵蓋 iOS、macOS、Xcode、Swift。",
+        "logo":"https:\/\/developer.apple.com\/wwdc24\/images\/masthead-24.svg",
+        "website":"https:\/\/developer.apple.com\/wwdc\/",
+        "download":""
     },
     {
-        "name": "NVIDIA GTC",
-        "category": "開發者大會",
-        "description": "NVIDIA GPU 技術大會，聚焦 AI、深度學習、CUDA。",
-        "logo": "https://www.bigdatawire.com/wp-content/uploads/2024/02/nvidia-gtc_400x400.png",
-        "website": "https://www.nvidia.com/gtc/",
-        "download": ""
+        "name":"NVIDIA GTC",
+        "category":"開發者大會",
+        "description":"NVIDIA GPU 技術大會，聚焦 AI、深度學習、CUDA。",
+        "logo":"https:\/\/www.bigdatawire.com\/wp-content\/uploads\/2024\/02\/nvidia-gtc_400x400.png",
+        "website":"https:\/\/www.nvidia.com\/gtc\/",
+        "download":""
     },
     {
-        "name": "Hacktoberfest",
-        "category": "社群與學習平台",
-        "description": "每年 10 月舉辦的全球開源貢獻活動，鼓勵開發者參與開源。",
-        "logo": "https://hacktoberfest.com/_next/static/media/logo-hacktoberfest-11--beige.2b2fdfcb.svg",
-        "website": "https://hacktoberfest.com/",
-        "download": ""
+        "name":"Hacktoberfest",
+        "category":"社群與學習平台",
+        "description":"每年 10 月舉辦的全球開源貢獻活動，鼓勵開發者參與開源。",
+        "logo":"https:\/\/hacktoberfest.com\/_next\/static\/media\/logo-hacktoberfest-11--beige.2b2fdfcb.svg",
+        "website":"https:\/\/hacktoberfest.com\/",
+        "download":""
     },
     {
-        "name": "PyCon Taiwan",
-        "category": "社群與學習平台",
-        "description": "臺灣 Python 社群年會，涵蓋資料科學、AI、Web。",
-        "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC6V8CcPYKBA-ZC6pBfvwFWOsL2SEOHNUxvQ&s",
-        "website": "https://tw.pycon.org/",
-        "download": ""
+        "name":"PyCon Taiwan",
+        "category":"社群與學習平台",
+        "description":"臺灣 Python 社群年會，涵蓋資料科學、AI、Web。",
+        "logo":"https:\/\/encrypted-tbn0.gstatic.com\/images?q=tbn:ANd9GcSC6V8CcPYKBA-ZC6pBfvwFWOsL2SEOHNUxvQ&s",
+        "website":"https:\/\/tw.pycon.org\/",
+        "download":""
     },
     {
-        "name": "SITCON",
-        "category": "台灣學生資源",
-        "description": "臺灣學生資訊年會，涵蓋開源、駭客文化。",
-        "logo": "https://sitcon.org/branding/assets/logos/withname.png",
-        "website": "https://sitcon.org/",
-        "download": ""
+        "name":"SITCON",
+        "category":"台灣學生資源",
+        "description":"臺灣學生資訊年會，涵蓋開源、駭客文化。",
+        "logo":"https:\/\/sitcon.org\/branding\/assets\/logos\/withname.png",
+        "website":"https:\/\/sitcon.org\/",
+        "download":""
     },
     {
-        "name": "Intel ISEF",
-        "category": "台灣學生資源",
-        "description": "全球最大高中科學競賽，涵蓋 AI、機器學習、工程。",
-        "logo": "https://www.competitionsciences.org/wp-content/uploads/2017/07/isef_logo.png",
-        "website": "https://www.societyforscience.org/isef/",
-        "download": ""
+        "name":"Intel ISEF",
+        "category":"台灣學生資源",
+        "description":"全球最大高中科學競賽，涵蓋 AI、機器學習、工程。",
+        "logo":"https:\/\/www.competitionsciences.org\/wp-content\/uploads\/2017\/07\/isef_logo.png",
+        "website":"https:\/\/www.societyforscience.org\/isef\/",
+        "download":""
     },
     {
-        "name": "Codecademy",
-        "category": "社群與學習平台",
-        "description": "互動式程式設計學習網站，涵蓋 Python、JavaScript、SQL。",
-        "logo": "https://www.codecademy.com/favicon.ico",
-        "website": "https://www.codecademy.com/",
-        "download": ""
+        "name":"Codecademy",
+        "category":"社群與學習平台",
+        "description":"互動式程式設計學習網站，涵蓋 Python、JavaScript、SQL。",
+        "logo":"https:\/\/www.codecademy.com\/favicon.ico",
+        "website":"https:\/\/www.codecademy.com\/",
+        "download":""
     },
     {
-        "name": "Udemy",
-        "category": "社群與學習平台",
-        "description": "提供程式設計、AI、商業技能等課程的線上學習平台。",
-        "logo": "https://frontends.udemycdn.com/frontends-homepage/staticx/udemy/images/v7/logo-udemy.svg",
-        "website": "https://www.udemy.com/",
-        "download": ""
+        "name":"Udemy",
+        "category":"社群與學習平台",
+        "description":"提供程式設計、AI、商業技能等課程的線上學習平台。",
+        "logo":"https:\/\/frontends.udemycdn.com\/frontends-homepage\/staticx\/udemy\/images\/v7\/logo-udemy.svg",
+        "website":"https:\/\/www.udemy.com\/",
+        "download":""
     },
     {
-        "name": "Kaggle",
-        "category": "數據與科學工具",
-        "description": "Google 提供的數據競賽平台，適合機器學習和 AI 開發。",
-        "logo": "https://www.kaggle.com/static/images/site-logo.svg",
-        "website": "https://www.kaggle.com/",
-        "download": ""
+        "name":"Kaggle",
+        "category":"數據與科學工具",
+        "description":"Google 提供的數據競賽平台，適合機器學習和 AI 開發。",
+        "logo":"https:\/\/www.kaggle.com\/static\/images\/site-logo.svg",
+        "website":"https:\/\/www.kaggle.com\/",
+        "download":""
     },
     {
-        "name": "ChatGPT",
-        "category": "AI與機器學習",
-        "description": "由 OpenAI 開發的 AI 聊天機器人，支援問答、寫作與編程。",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg",
-        "website": "https://chat.openai.com/",
-        "download": ""
+        "name":"ChatGPT",
+        "category":"AI與機器學習",
+        "description":"由 OpenAI 開發的 AI 聊天機器人，支援問答、寫作與編程。",
+        "logo":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/0\/04\/ChatGPT_logo.svg",
+        "website":"https:\/\/chat.openai.com\/",
+        "download":""
     },
     {
-        "name": "Gemini",
-        "category": "AI與機器學習",
-        "description": "Google DeepMind 開發的 AI 聊天助手，支援多模態輸入。",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Google_Gemini_logo.svg/640px-Google_Gemini_logo.svg.png",
-        "website": "https://gemini.google.com/",
-        "download": ""
+        "name":"Gemini",
+        "category":"AI與機器學習",
+        "description":"Google DeepMind 開發的 AI 聊天助手，支援多模態輸入。",
+        "logo":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/8\/8a\/Google_Gemini_logo.svg\/640px-Google_Gemini_logo.svg.png",
+        "website":"https:\/\/gemini.google.com\/",
+        "download":""
     },
     {
-        "name": "Claude",
-        "category": "AI與機器學習",
-        "description": "Anthropic 開發的 AI 助手，專注於安全與長文本處理。",
-        "logo": "https://cdn-1.webcatalog.io/catalog/claude/claude-icon-filled-256.png?v=1738757401534",
-        "website": "https://www.anthropic.com/",
-        "download": ""
+        "name":"Claude",
+        "category":"AI與機器學習",
+        "description":"Anthropic 開發的 AI 助手，專注於安全與長文本處理。",
+        "logo":"https:\/\/cdn-1.webcatalog.io\/catalog\/claude\/claude-icon-filled-256.png?v=1738757401534",
+        "website":"https:\/\/www.anthropic.com\/",
+        "download":""
     },
     {
-        "name": "Grok",
-        "category": "AI與機器學習",
-        "description": "X (Twitter) 推出的 AI 助手，可處理文本生成與對話。",
-        "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvwGLjIYF5J3EJzmKaKFjLzLnCQl5fmrwoIA&s",
-        "website": "https://x.ai/",
-        "download": ""
+        "name":"Grok",
+        "category":"AI與機器學習",
+        "description":"X (Twitter) 推出的 AI 助手，可處理文本生成與對話。",
+        "logo":"https:\/\/encrypted-tbn0.gstatic.com\/images?q=tbn:ANd9GcRvwGLjIYF5J3EJzmKaKFjLzLnCQl5fmrwoIA&s",
+        "website":"https:\/\/x.ai\/",
+        "download":""
     },
     {
-        "name": "Uiverse",
-        "category": "Web開發相關",
-        "description": "免費的 CSS、HTML、JavaScript UI 組件，適用於前端開發。",
-        "logo": "https://uiverse.io/favicon.ico",
-        "website": "https://uiverse.io/",
-        "download": ""
+        "name":"Uiverse",
+        "category":"Web開發相關",
+        "description":"免費的 CSS、HTML、JavaScript UI 組件，適用於前端開發。",
+        "logo":"https:\/\/uiverse.io\/favicon.ico",
+        "website":"https:\/\/uiverse.io\/",
+        "download":""
     },
     {
-        "name": "Stack Overflow",
-        "category": "社群與學習平台",
-        "description": "全球最大程式設計問答社群，適合查找程式錯誤解決方案。",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Stack_Overflow_icon.svg",
-        "website": "https://stackoverflow.com/",
-        "download": ""
+        "name":"Stack Overflow",
+        "category":"社群與學習平台",
+        "description":"全球最大程式設計問答社群，適合查找程式錯誤解決方案。",
+        "logo":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/e\/ef\/Stack_Overflow_icon.svg",
+        "website":"https:\/\/stackoverflow.com\/",
+        "download":""
     },
     {
-        "name": "GitHub",
-        "category": "社群與學習平台",
-        "description": "全球最大的開源代碼託管平台，適用於版本控制與協作。",
-        "logo": "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
-        "website": "https://github.com/",
-        "download": ""
+        "name":"GitHub",
+        "category":"社群與學習平台",
+        "description":"全球最大的開源代碼託管平台，適用於版本控制與協作。",
+        "logo":"https:\/\/github.githubassets.com\/images\/modules\/logos_page\/GitHub-Mark.png",
+        "website":"https:\/\/github.com\/",
+        "download":""
     },
     {
-        "name": "W3Schools",
-        "category": "Web開發相關",
-        "description": "提供 HTML、CSS、JavaScript、SQL 等技術教學。",
-        "logo": "https://yt3.googleusercontent.com/Jzh-VfliIJvWX-jBOFRXfCUpDdhInOokGZQshKlET4H-u1OLl_80GY-2wwe8gvQwFoSzeeYzNg=s900-c-k-c0x00ffffff-no-rj",
-        "website": "https://www.w3schools.com/",
-        "download": ""
+        "name":"W3Schools",
+        "category":"Web開發相關",
+        "description":"提供 HTML、CSS、JavaScript、SQL 等技術教學。",
+        "logo":"https:\/\/yt3.googleusercontent.com\/Jzh-VfliIJvWX-jBOFRXfCUpDdhInOokGZQshKlET4H-u1OLl_80GY-2wwe8gvQwFoSzeeYzNg=s900-c-k-c0x00ffffff-no-rj",
+        "website":"https:\/\/www.w3schools.com\/",
+        "download":""
     },
     {
-        "name": "React",
-        "category": "Web開發相關",
-        "description": "Facebook 開發的 JavaScript 前端框架，適用於 UI 開發。",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
-        "website": "https://reactjs.org/",
-        "download": ""
+        "name":"React",
+        "category":"Web開發相關",
+        "description":"Facebook 開發的 JavaScript 前端框架，適用於 UI 開發。",
+        "logo":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/a\/a7\/React-icon.svg",
+        "website":"https:\/\/reactjs.org\/",
+        "download":""
     },
     {
-        "name": "Vue.js",
-        "category": "Web開發相關",
-        "description": "漸進式 JavaScript 框架，適用於 Web 應用開發。",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg",
-        "website": "https://vuejs.org/",
-        "download": ""
+        "name":"Vue.js",
+        "category":"Web開發相關",
+        "description":"漸進式 JavaScript 框架，適用於 Web 應用開發。",
+        "logo":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/9\/95\/Vue.js_Logo_2.svg",
+        "website":"https:\/\/vuejs.org\/",
+        "download":""
     },
     {
-        "name": "Angular",
-        "category": "Web開發相關",
-        "description": "Google 開發的前端框架，適用於大型企業級應用。",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Angular_full_color_logo.svg",
-        "website": "https://angular.io/",
-        "download": ""
+        "name":"Angular",
+        "category":"Web開發相關",
+        "description":"Google 開發的前端框架，適用於大型企業級應用。",
+        "logo":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/c\/cf\/Angular_full_color_logo.svg",
+        "website":"https:\/\/angular.io\/",
+        "download":""
     },
     {
-        "name": "Bootstrap",
-        "category": "Web開發相關",
-        "description": "Twitter 開發的 CSS 框架，提供響應式 UI。",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg",
-        "website": "https://getbootstrap.com/",
-        "download": ""
+        "name":"Bootstrap",
+        "category":"Web開發相關",
+        "description":"Twitter 開發的 CSS 框架，提供響應式 UI。",
+        "logo":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/b\/b2\/Bootstrap_logo.svg",
+        "website":"https:\/\/getbootstrap.com\/",
+        "download":""
     },
     {
-        "name": "Tailwind CSS",
-        "category": "Web開發相關",
-        "description": "實用工具優先的 CSS 框架，適用於快速開發。",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
-        "website": "https://tailwindcss.com/",
-        "download": ""
+        "name":"Tailwind CSS",
+        "category":"Web開發相關",
+        "description":"實用工具優先的 CSS 框架，適用於快速開發。",
+        "logo":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/d\/d5\/Tailwind_CSS_Logo.svg",
+        "website":"https:\/\/tailwindcss.com\/",
+        "download":""
     },
     {
-        "name": "Express.js",
-        "category": "Web開發相關",
-        "description": "輕量級 Node.js Web 框架，適用於 API 伺服器開發。",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png",
-        "website": "https://expressjs.com/",
-        "download": ""
+        "name":"Express.js",
+        "category":"Web開發相關",
+        "description":"輕量級 Node.js Web 框架，適用於 API 伺服器開發。",
+        "logo":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/6\/64\/Expressjs.png",
+        "website":"https:\/\/expressjs.com\/",
+        "download":""
     },
     {
-        "name": "Django",
-        "category": "Web開發相關",
-        "description": "Python Web 框架，內建 ORM 與管理系統。",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/7/75/Django_logo.svg",
-        "website": "https://www.djangoproject.com/",
-        "download": ""
+        "name":"Django",
+        "category":"Web開發相關",
+        "description":"Python Web 框架，內建 ORM 與管理系統。",
+        "logo":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/7\/75\/Django_logo.svg",
+        "website":"https:\/\/www.djangoproject.com\/",
+        "download":""
     },
     {
-        "name": "Flask",
-        "category": "Web開發相關",
-        "description": "輕量級 Python Web 框架，適用於小型專案。",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Flask_logo.svg",
-        "website": "https://flask.palletsprojects.com/",
-        "download": ""
+        "name":"Flask",
+        "category":"Web開發相關",
+        "description":"輕量級 Python Web 框架，適用於小型專案。",
+        "logo":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/3\/3c\/Flask_logo.svg",
+        "website":"https:\/\/flask.palletsprojects.com\/",
+        "download":""
     },
     {
-        "name": "Spring Boot",
-        "category": "Web開發相關",
-        "description": "Java 的企業級 Web 框架，適用於微服務架構。",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/7/79/Spring_Boot.svg",
-        "website": "https://spring.io/projects/spring-boot",
-        "download": ""
+        "name":"Spring Boot",
+        "category":"Web開發相關",
+        "description":"Java 的企業級 Web 框架，適用於微服務架構。",
+        "logo":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/7\/79\/Spring_Boot.svg",
+        "website":"https:\/\/spring.io\/projects\/spring-boot",
+        "download":""
     },
     {
-        "name": "TensorFlow",
-        "category": "AI與機器學習",
-        "description": "Google 開發的開源機器學習框架，適用於 AI 訓練。",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Tensorflow_logo.svg",
-        "website": "https://www.tensorflow.org/",
-        "download": ""
+        "name":"TensorFlow",
+        "category":"AI與機器學習",
+        "description":"Google 開發的開源機器學習框架，適用於 AI 訓練。",
+        "logo":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/2\/2d\/Tensorflow_logo.svg",
+        "website":"https:\/\/www.tensorflow.org\/",
+        "download":""
     },
     {
-        "name": "PyTorch",
-        "category": "AI與機器學習",
-        "description": "Facebook 開發的深度學習框架，適用於 AI 研究。",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/1/10/PyTorch_logo_icon.svg",
-        "website": "https://pytorch.org/",
-        "download": ""
+        "name":"PyTorch",
+        "category":"AI與機器學習",
+        "description":"Facebook 開發的深度學習框架，適用於 AI 研究。",
+        "logo":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/1\/10\/PyTorch_logo_icon.svg",
+        "website":"https:\/\/pytorch.org\/",
+        "download":""
     },
     {
-        "name": "Scikit-learn",
-        "category": "AI與機器學習",
-        "description": "Python 的機器學習庫，提供分類、回歸、聚類等功能。",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg",
-        "website": "https://scikit-learn.org/",
-        "download": ""
+        "name":"Scikit-learn",
+        "category":"AI與機器學習",
+        "description":"Python 的機器學習庫，提供分類、回歸、聚類等功能。",
+        "logo":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/0\/05\/Scikit_learn_logo_small.svg",
+        "website":"https:\/\/scikit-learn.org\/",
+        "download":""
     },
     {
-        "name": "Pandas",
-        "category": "數據與科學工具",
-        "description": "Python 的數據處理庫，適用於數據分析。",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Pandas_logo.svg",
-        "website": "https://pandas.pydata.org/",
-        "download": ""
+        "name":"Pandas",
+        "category":"數據與科學工具",
+        "description":"Python 的數據處理庫，適用於數據分析。",
+        "logo":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/e\/ed\/Pandas_logo.svg",
+        "website":"https:\/\/pandas.pydata.org\/",
+        "download":""
     },
     {
-        "name": "NumPy",
-        "category": "數據與科學工具",
-        "description": "Python 的科學計算庫，適用於矩陣運算。",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/3/31/NumPy_logo_2020.svg",
-        "website": "https://numpy.org/",
-        "download": ""
+        "name":"NumPy",
+        "category":"數據與科學工具",
+        "description":"Python 的科學計算庫，適用於矩陣運算。",
+        "logo":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/3\/31\/NumPy_logo_2020.svg",
+        "website":"https:\/\/numpy.org\/",
+        "download":""
     },
     {
-        "name": "Matplotlib",
-        "category": "數據與科學工具",
-        "description": "Python 的繪圖庫，適用於數據可視化。",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/8/84/Matplotlib_icon.svg",
-        "website": "https://matplotlib.org/",
-        "download": ""
+        "name":"Matplotlib",
+        "category":"數據與科學工具",
+        "description":"Python 的繪圖庫，適用於數據可視化。",
+        "logo":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/8\/84\/Matplotlib_icon.svg",
+        "website":"https:\/\/matplotlib.org\/",
+        "download":""
     },
     {
-        "name": "OpenCV",
-        "category": "數據與科學工具",
-        "description": "開源電腦視覺庫，適用於影像處理與 AI 應用。",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/3/32/OpenCV_Logo_with_text_svg_version.svg",
-        "website": "https://opencv.org/",
-        "download": ""
+        "name":"OpenCV",
+        "category":"數據與科學工具",
+        "description":"開源電腦視覺庫，適用於影像處理與 AI 應用。",
+        "logo":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/3\/32\/OpenCV_Logo_with_text_svg_version.svg",
+        "website":"https:\/\/opencv.org\/",
+        "download":""
     },
     {
-        "name": "Arduino",
-        "category": "開發工具與環境",
-        "description": "開源硬體與開發庫，適用於物聯網與 DIY 專案。",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/8/87/Arduino_Logo.svg",
-        "website": "https://www.arduino.cc/",
-        "download": ""
+        "name":"Arduino",
+        "category":"開發工具與環境",
+        "description":"開源硬體與開發庫，適用於物聯網與 DIY 專案。",
+        "logo":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/8\/87\/Arduino_Logo.svg",
+        "website":"https:\/\/www.arduino.cc\/",
+        "download":""
     },
     {
-        "name": "FreeRTOS",
-        "category": "開發工具與環境",
-        "description": "適用於微控制器的開源即時作業系統 (RTOS)。",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Logo_freeRTOS.png",
-        "website": "https://www.freertos.org/",
-        "download": ""
+        "name":"FreeRTOS",
+        "category":"開發工具與環境",
+        "description":"適用於微控制器的開源即時作業系統 (RTOS)。",
+        "logo":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/4\/4e\/Logo_freeRTOS.png",
+        "website":"https:\/\/www.freertos.org\/",
+        "download":""
     },
     {
-        "name": "SDL",
-        "category": "遊戲開發",
-        "description": "跨平台遊戲開發庫，適用於 2D / 3D 遊戲。",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/1/16/Simple_DirectMedia_Layer%2C_Logo.svg",
-        "website": "https://www.libsdl.org/",
-        "download": ""
+        "name":"SDL",
+        "category":"遊戲開發",
+        "description":"跨平台遊戲開發庫，適用於 2D \/ 3D 遊戲。",
+        "logo":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/1\/16\/Simple_DirectMedia_Layer%2C_Logo.svg",
+        "website":"https:\/\/www.libsdl.org\/",
+        "download":""
     },
     {
-        "name": "Godot",
-        "category": "遊戲開發",
-        "description": "開源 2D/3D 遊戲引擎，適用於獨立遊戲開發。",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Godot_icon.svg",
-        "website": "https://godotengine.org/",
-        "download": ""
+        "name":"Godot",
+        "category":"遊戲開發",
+        "description":"開源 2D\/3D 遊戲引擎，適用於獨立遊戲開發。",
+        "logo":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/6\/6a\/Godot_icon.svg",
+        "website":"https:\/\/godotengine.org\/",
+        "download":""
     },
     {
-        "name": "PuTTY",
-        "category": "開發工具與環境",
-        "description": "免費 SSH、Telnet 客戶端，適用於 Windows、Linux。",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/PuTTY_Icon_upstream.svg/1200px-PuTTY_Icon_upstream.svg.png",
-        "website": "https://www.chiark.greenend.org.uk/~sgtatham/putty/",
-        "download": ""
+        "name":"PuTTY",
+        "category":"開發工具與環境",
+        "description":"免費 SSH、Telnet 客戶端，適用於 Windows、Linux。",
+        "logo":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/3\/30\/PuTTY_Icon_upstream.svg\/1200px-PuTTY_Icon_upstream.svg.png",
+        "website":"https:\/\/www.chiark.greenend.org.uk\/~sgtatham\/putty\/",
+        "download":""
     },
     {
-        "name": "LaTeX",
-        "category": "數據與科學工具",
-        "description": "強大的排版系統，適用於學術論文與技術文件。",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/9/92/LaTeX_logo.svg",
-        "website": "https://www.latex-project.org/",
-        "download": ""
+        "name":"LaTeX",
+        "category":"數據與科學工具",
+        "description":"強大的排版系統，適用於學術論文與技術文件。",
+        "logo":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/9\/92\/LaTeX_logo.svg",
+        "website":"https:\/\/www.latex-project.org\/",
+        "download":""
     },
     {
-        "name": "Overleaf",
-        "category": "數據與科學工具",
-        "description": "雲端 LaTeX 編輯器，適用於學術論文協作。",
-        "logo": "https://images.ctfassets.net/nrgyaltdicpt/3nesOc6iRhdzatUCC5OKWo/ea0fc03647a5f6a903a9aacc357481b2/overleaf-o-logo-primary.jpg",
-        "website": "https://www.overleaf.com/",
-        "download": ""
+        "name":"Overleaf",
+        "category":"數據與科學工具",
+        "description":"雲端 LaTeX 編輯器，適用於學術論文協作。",
+        "logo":"https:\/\/images.ctfassets.net\/nrgyaltdicpt\/3nesOc6iRhdzatUCC5OKWo\/ea0fc03647a5f6a903a9aacc357481b2\/overleaf-o-logo-primary.jpg",
+        "website":"https:\/\/www.overleaf.com\/",
+        "download":""
     },
     {
-        "name": "arXiv",
-        "category": "數據與科學工具",
-        "description": "免費的學術論文預印本庫，涵蓋物理、數學、AI 研究。",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/7/7a/ArXiv_logo_2022.png",
-        "website": "https://arxiv.org/",
-        "download": ""
+        "name":"arXiv",
+        "category":"數據與科學工具",
+        "description":"免費的學術論文預印本庫，涵蓋物理、數學、AI 研究。",
+        "logo":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/7\/7a\/ArXiv_logo_2022.png",
+        "website":"https:\/\/arxiv.org\/",
+        "download":""
     },
     {
-        "name": "Sigil",
-        "category": "創作工具",
-        "description": "開源 EPUB 電子書編輯器，適用於電子書製作。",
-        "logo": "https://sigil-ebook.com/assets/images/sigil-512.png",
-        "website": "https://sigil-ebook.com/",
-        "download": ""
+        "name":"Sigil",
+        "category":"創作工具",
+        "description":"開源 EPUB 電子書編輯器，適用於電子書製作。",
+        "logo":"https:\/\/sigil-ebook.com\/assets\/images\/sigil-512.png",
+        "website":"https:\/\/sigil-ebook.com\/",
+        "download":""
     },
     {
-        "name": "Discord",
-        "category": "社群與學習平台",
-        "description": "熱門即時通訊平台，適用於遊戲、開發者社群。",
-        "logo": "https://images-eds-ssl.xboxlive.com/image?url=4rt9.lXDC4H_93laV1_eHHFT949fUipzkiFOBH3fAiZZUCdYojwUyX2aTonS1aIwMrx6NUIsHfUHSLzjGJFxxsG72wAo9EWJR4yQWyJJaDb6rYcBtJvTvH3UoAS4JFNDaxGhmKNaMwgElLURlRFeVkLCjkfnXmWtINWZIrPGYq0-&format=source",
-        "website": "https://discord.com/",
-        "download": ""
+        "name":"Discord",
+        "category":"社群與學習平台",
+        "description":"熱門即時通訊平台，適用於遊戲、開發者社群。",
+        "logo":"https:\/\/images-eds-ssl.xboxlive.com\/image?url=4rt9.lXDC4H_93laV1_eHHFT949fUipzkiFOBH3fAiZZUCdYojwUyX2aTonS1aIwMrx6NUIsHfUHSLzjGJFxxsG72wAo9EWJR4yQWyJJaDb6rYcBtJvTvH3UoAS4JFNDaxGhmKNaMwgElLURlRFeVkLCjkfnXmWtINWZIrPGYq0-&format=source",
+        "website":"https:\/\/discord.com\/",
+        "download":""
     },
     {
-        "name": "Slack",
-        "category": "社群與學習平台",
-        "description": "適用於團隊協作與開發者社群的即時通訊工具。",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/7/76/Slack_Icon.png",
-        "website": "https://slack.com/",
-        "download": ""
+        "name":"Slack",
+        "category":"社群與學習平台",
+        "description":"適用於團隊協作與開發者社群的即時通訊工具。",
+        "logo":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/7\/76\/Slack_Icon.png",
+        "website":"https:\/\/slack.com\/",
+        "download":""
     },
     {
-        "name": "Audacity",
-        "category": "創作工具",
-        "description": "開源音訊編輯軟體，適用於錄音與音訊處理。",
-        "logo": "https://images-eds-ssl.xboxlive.com/image?url=4rt9.lXDC4H_93laV1_eHHFT949fUipzkiFOBH3fAiZZUCdYojwUyX2aTonS1aIwMrx6NUIsHfUHSLzjGJFxxseQJV573Uwugf0POF9I45CxYkDTe9L9RpBQ0NviXnyGtveCxdSwzcWHn8q6VdXAjJYtSJdpsx8zzt0MgOW6boc-&format=source",
-        "website": "https://www.audacityteam.org/",
-        "download": ""
+        "name":"Audacity",
+        "category":"創作工具",
+        "description":"開源音訊編輯軟體，適用於錄音與音訊處理。",
+        "logo":"https:\/\/images-eds-ssl.xboxlive.com\/image?url=4rt9.lXDC4H_93laV1_eHHFT949fUipzkiFOBH3fAiZZUCdYojwUyX2aTonS1aIwMrx6NUIsHfUHSLzjGJFxxseQJV573Uwugf0POF9I45CxYkDTe9L9RpBQ0NviXnyGtveCxdSwzcWHn8q6VdXAjJYtSJdpsx8zzt0MgOW6boc-&format=source",
+        "website":"https:\/\/www.audacityteam.org\/",
+        "download":""
     },
     {
-        "name": "PowerShell",
-        "category": "開發工具與環境",
-        "description": "微軟的命令列工具，適用於自動化與系統管理。",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/2/2f/PowerShell_5.0_icon.png",
-        "website": "https://learn.microsoft.com/en-us/powershell/",
-        "download": ""
+        "name":"PowerShell",
+        "category":"開發工具與環境",
+        "description":"微軟的命令列工具，適用於自動化與系統管理。",
+        "logo":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/2\/2f\/PowerShell_5.0_icon.png",
+        "website":"https:\/\/learn.microsoft.com\/en-us\/powershell\/",
+        "download":""
     },
     {
-        "name": "Ubuntu",
-        "category": "作業系統",
-        "description": "最受歡迎的 Linux 發行版，適用於開發與伺服器應用。",
-        "logo": "https://imtranslationweb.com/media/k2/items/cache/181bbfa794e218f5cd90439ff3dd1578_L.jpg",
-        "website": "https://ubuntu.com/",
-        "download": ""
+        "name":"Ubuntu",
+        "category":"作業系統",
+        "description":"最受歡迎的 Linux 發行版，適用於開發與伺服器應用。",
+        "logo":"https:\/\/imtranslationweb.com\/media\/k2\/items\/cache\/181bbfa794e218f5cd90439ff3dd1578_L.jpg",
+        "website":"https:\/\/ubuntu.com\/",
+        "download":""
     },
     {
-        "name": "Debian",
-        "category": "作業系統",
-        "description": "穩定性極高的 Linux 發行版，適用於伺服器與嵌入式系統。",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/6/66/Openlogo-debianV2.svg",
-        "website": "https://www.debian.org/",
-        "download": ""
+        "name":"Debian",
+        "category":"作業系統",
+        "description":"穩定性極高的 Linux 發行版，適用於伺服器與嵌入式系統。",
+        "logo":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/6\/66\/Openlogo-debianV2.svg",
+        "website":"https:\/\/www.debian.org\/",
+        "download":""
     },
     {
-        "name": "Arch Linux",
-        "category": "作業系統",
-        "description": "極簡滾動更新 Linux 發行版，適合進階使用者。",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Archlinux-logo-standard-version.png",
-        "website": "https://archlinux.org/",
-        "download": ""
+        "name":"Arch Linux",
+        "category":"作業系統",
+        "description":"極簡滾動更新 Linux 發行版，適合進階使用者。",
+        "logo":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/e\/e8\/Archlinux-logo-standard-version.png",
+        "website":"https:\/\/archlinux.org\/",
+        "download":""
     },
     {
-        "name": "Xcode",
-        "category": "開發工具與環境",
-        "description": "Apple 官方的 iOS / macOS 開發環境，內建 Swift、Objective-C 支援。",
-        "logo": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/59/05/ea/5905eaa1-334a-549c-931f-81f30777d6f4/Xcode-85-220-0-4-2x-sRGB.png/1200x630bb.png",
-        "website": "https://developer.apple.com/xcode/",
-        "download": ""
+        "name":"Xcode",
+        "category":"開發工具與環境",
+        "description":"Apple 官方的 iOS \/ macOS 開發環境，內建 Swift、Objective-C 支援。",
+        "logo":"https:\/\/is1-ssl.mzstatic.com\/image\/thumb\/Purple211\/v4\/59\/05\/ea\/5905eaa1-334a-549c-931f-81f30777d6f4\/Xcode-85-220-0-4-2x-sRGB.png\/1200x630bb.png",
+        "website":"https:\/\/developer.apple.com\/xcode\/",
+        "download":""
     },
     {
-        "name": "Visual Studio",
-        "category": "開發工具與環境",
-        "description": "微軟的全功能開發環境，支援 C#、C++、Python。",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Visual_Studio_Icon_2022.svg/1200px-Visual_Studio_Icon_2022.svg.png",
-        "website": "https://visualstudio.microsoft.com/",
-        "download": ""
+        "name":"Visual Studio",
+        "category":"開發工具與環境",
+        "description":"微軟的全功能開發環境，支援 C#、C++、Python。",
+        "logo":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/2\/2c\/Visual_Studio_Icon_2022.svg\/1200px-Visual_Studio_Icon_2022.svg.png",
+        "website":"https:\/\/visualstudio.microsoft.com\/",
+        "download":""
     },
     {
-        "name": "IntelliJ IDEA",
-        "category": "開發工具與環境",
-        "description": "JetBrains 出品的專業 Java / Kotlin IDE。",
-        "logo": "https://resources.jetbrains.com/storage/products/intellij-idea/img/meta/intellij-idea_logo_300x300.png",
-        "website": "https://www.jetbrains.com/idea/",
-        "download": ""
+        "name":"IntelliJ IDEA",
+        "category":"開發工具與環境",
+        "description":"JetBrains 出品的專業 Java \/ Kotlin IDE。",
+        "logo":"https:\/\/resources.jetbrains.com\/storage\/products\/intellij-idea\/img\/meta\/intellij-idea_logo_300x300.png",
+        "website":"https:\/\/www.jetbrains.com\/idea\/",
+        "download":""
     },
     {
-        "name": "Eclipse",
-        "category": "開發工具與環境",
-        "description": "開源 Java / C++ 開發環境，支援多種插件擴展。",
-        "logo": "https://www.iri.com/blog/wp-content/uploads/2012/06/eclipse-logo.png",
-        "website": "https://www.eclipse.org/",
-        "download": ""
+        "name":"Eclipse",
+        "category":"開發工具與環境",
+        "description":"開源 Java \/ C++ 開發環境，支援多種插件擴展。",
+        "logo":"https:\/\/www.iri.com\/blog\/wp-content\/uploads\/2012\/06\/eclipse-logo.png",
+        "website":"https:\/\/www.eclipse.org\/",
+        "download":""
     },
     {
-        "name": "Animate Taiwan",
-        "category": "ACGN平台與社群",
-        "description": "安利美特台灣分店，提供動漫周邊、漫畫與限定商品，位於台北光華商場附近。",
-        "logo": "https://www.animate-onlineshop.com.tw/Contents/images/common/logo.png",
-        "website": "https://www.animate-onlineshop.com.tw/",
-        "download": ""
+        "name":"OpenToonz",
+        "category":"創作工具",
+        "description":"開源 2D 動畫軟體，廣受動漫產業使用，支援洋蔥皮與骨骼動畫。",
+        "logo":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/3\/3b\/OpenToonz_logo.svg",
+        "website":"https:\/\/opentoonz.github.io\/",
+        "download":""
     },
     {
-        "name": "Taiwan Comic Exhibition",
-        "category": "台灣學生資源",
-        "description": "台北國際動漫節，台灣最大動漫展覽，匯集同人創作與動漫周邊。",
-        "logo": "https://www.ccpa.org.tw/images/logo_comic.png",
-        "website": "https://www.ccpa.org.tw/comic/",
-        "download": ""
+        "name":"Synfig Studio",
+        "category":"創作工具",
+        "description":"免費 2D 動畫軟體，支援向量補間與骨骼動畫，適合動漫製作。",
+        "logo":"https:\/\/www.synfig.org\/wp-content\/uploads\/2016\/04\/synfig_icon.png",
+        "website":"https:\/\/www.synfig.org\/",
+        "download":""
     },
     {
-        "name": "Guanghua Digital Plaza",
-        "category": "台灣學生資源",
-        "description": "台北科技與動漫聖地，提供電腦硬體、軟體與動漫周邊商品。",
-        "logo": "https://www.guanghua.com.tw/images/logo.png",
-        "website": "https://www.guanghua.com.tw/",
-        "download": ""
+        "name":"Clip Studio Paint",
+        "category":"創作工具",
+        "description":"專業漫畫與插畫繪圖軟體，廣受台灣動漫創作者喜愛。",
+        "logo":"https:\/\/www.clipstudio.net\/wp-content\/uploads\/2023\/04\/clipstudiopaint_logo.png",
+        "website":"https:\/\/www.clipstudio.net\/",
+        "download":""
     },
     {
-        "name": "Computex",
-        "category": "台灣學生資源",
-        "description": "台灣國際電腦展，全球最大電腦與科技展覽，展示最新技術與產品。",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Computex_Taipei_logo_since_2010.svg",
-        "website": "https://www.computextaipei.com.tw/",
-        "download": ""
+        "name":"Toona",
+        "category":"創作工具",
+        "description":"AI 動畫工具，將靜態漫畫轉為動畫，支援自動上色與中間影格生成。",
+        "logo":"https:\/\/toona.io\/static\/images\/toona_logo.png",
+        "website":"https:\/\/toona.io\/",
+        "download":""
     },
     {
-        "name": "Live2D Cubism",
-        "category": "創作工具",
-        "description": "2D角色建模與動畫製作工具，常用於VTuber虛擬形象建立。",
-        "logo": "https://www.live2d.com/wp-content/uploads/2022/02/cubism-icon.svg",
-        "website": "https://www.live2d.com/en/",
-        "download": ""
+        "name":"Bahamut",
+        "category":"ACGN平台與社群",
+        "description":"台灣最大的動漫與遊戲社群平台，提供論壇、動畫評論與活動資訊。",
+        "logo":"https:\/\/www.gamer.com.tw\/images\/gamer_logo.png",
+        "website":"https:\/\/www.gamer.com.tw\/",
+        "download":""
     },
     {
-        "name": "Blender",
-        "category": "創作工具",
-        "description": "開源3D建模與動畫工具，適用於動畫製作、遊戲設計與視覺特效。",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Blender_logo_no_text.svg",
-        "website": "https://www.blender.org/",
-        "download": ""
+        "name":"Animate Taiwan",
+        "category":"ACGN平台與社群",
+        "description":"安利美特台灣分店，提供動漫周邊、漫畫與限定商品，位於台北光華商場附近。",
+        "logo":"https:\/\/www.animate-onlineshop.com.tw\/Contents\/images\/common\/logo.png",
+        "website":"https:\/\/www.animate-onlineshop.com.tw\/",
+        "download":""
     },
     {
-        "name": "pixiv",
-        "category": "ACGN平台與社群",
-        "description": "日本插畫、漫畫與小說創作社群，聚集大量同人與原創作品。",
-        "logo": "https://www.pixiv.net/favicon.ico",
-        "website": "https://www.pixiv.net/",
-        "download": ""
+        "name":"Taiwan Comic Exhibition",
+        "category":"台灣學生資源",
+        "description":"台北國際動漫節，台灣最大動漫展覽，匯集同人創作與動漫周邊。",
+        "logo":"https:\/\/www.ccpa.org.tw\/images\/logo_comic.png",
+        "website":"https:\/\/www.ccpa.org.tw\/comic\/",
+        "download":""
     },
     {
-        "name": "DLsite",
-        "category": "ACGN平台與社群",
-        "description": "販售同人漫畫、語音作品與獨立遊戲的日本平台。",
-        "logo": "https://www.dlsite.com/images/web/common/favicon.ico",
-        "website": "https://www.dlsite.com/",
-        "download": ""
+        "name":"Guanghua Digital Plaza",
+        "category":"台灣學生資源",
+        "description":"台北科技與動漫聖地，提供電腦硬體、軟體與動漫周邊商品。",
+        "logo":"https:\/\/www.guanghua.com.tw\/images\/logo.png",
+        "website":"https:\/\/www.guanghua.com.tw\/",
+        "download":""
     },
-
     {
-        "name": "Hugging Face",
-        "category": "AI與機器學習",
-        "description": "提供Transformers與多種開源模型，支援自然語言處理與多模態應用。",
-        "logo": "https://huggingface.co/front/assets/huggingface_logo-noborder.svg",
-        "website": "https://huggingface.co/",
-        "download": ""
+        "name":"Manga Translator",
+        "category":"創作工具",
+        "description":"AI 漫畫翻譯工具，支援繁體中文，適合本地化同人作品。",
+        "logo":"https:\/\/manga-translator.com\/images\/logo.png",
+        "website":"https:\/\/manga-translator.com\/",
+        "download":""
     },
     {
-        "name": "Weights & Biases",
-        "category": "AI與機器學習",
-        "description": "機器學習訓練監控與實驗版本控制平台，支援PyTorch與TensorFlow。",
-        "logo": "https://wandb.ai/favicon.ico",
-        "website": "https://wandb.ai/",
-        "download": ""
-    },
-    {
-        "name": "LTspice",
-        "category": "開發工具與環境",
-        "description": "Linear Technology 開發的免費SPICE電路模擬器，支援類比與混合訊號設計。",
-        "logo": "https://www.analog.com/en/_/media/analog/en/design-center/ltspice/ltspice24-logo.jpg?rev=b59e8ba225b548c9beb3b84e9fd9ef6d&sc_lang=en&la=en&h=350&w=350&hash=9E8B4AD73D26127F928749F7269A9DDD",
-        "website": "https://www.analog.com/en/design-center/design-tools-and-calculators/ltspice-simulator.html",
-        "download": ""
-    },
-    {
-        "name": "博客來動漫館",
-        "category": "書店與通路",
-        "description": "台灣最大線上書店，漫畫與周邊商品一應俱全。",
-        "logo": "https://jci.book.com.tw/css/header/images/books_logo_185x52.png",
-        "website": "https://www.books.com.tw/web/comic/",
-        "download": ""
-    },
-    {
-        "name": "墊腳石書店",
-        "category": "書店與通路",
-        "description": "全台據點眾多，提供漫畫、輕小說與教科參考書。",
-        "logo": "https://cms.cdn.91app.com/images/original/32014/da70ae7b-d312-4ff8-aadf-83525fbc310b-1617779397-qwe8pxqrse_d.png",
-        "website": "https://www.tenlong.com.tw/",
-        "download": ""
-    },
-    {
-        "name": "駿河屋（Suruga-ya）",
-        "category": "二手周邊平台",
-        "description": "日本最大二手動漫周邊販售平台，支援國際運送。",
-        "logo": "https://www.suruga-ya.jp/pics_webp/common/pc/logo-surugaya.svg.webp",
-        "website": "https://www.suruga-ya.jp/",
-        "download": ""
-    },
-    {
-        "name": "K-BOOKS",
-        "category": "書店與通路",
-        "description": "秋葉原知名二手同人誌與原畫集名店。",
-        "logo": "https://www.k-books.co.jp/images/logo.jpg",
-        "website": "https://www.k-books.co.jp/",
-        "download": ""
-    },
-    {
-        "name": "巴哈姆特動畫瘋",
-        "category": "ACGN平台與社群",
-        "description": "台灣合法串流平台，支援手機／網頁與彈幕功能。",
-        "logo": "https://ani.gamer.com.tw/favicon.ico",
-        "website": "https://ani.gamer.com.tw/",
-        "download": ""
-    },
-    {
-        "name": "arXiv",
-        "category": "學術與研究資源",
-        "description": "國際開放學術預印本平台，涵蓋AI、物理、數學等。",
-        "logo": "https://arxiv.org/favicon.ico",
-        "website": "https://arxiv.org/",
-        "download": ""
-    },
-    {
-        "name": "IEEE Xplore",
-        "category": "學術與研究資源",
-        "description": "電機資工領域最權威的期刊與會議論文資源。",
-        "logo": "https://ieeexplore.ieee.org/assets/img/xplore_logo_white.svg",
-        "website": "https://ieeexplore.ieee.org/",
-        "download": ""
-    },
-    {
-        "name": "LeetCode",
-        "category": "台灣學生資源",
-        "description": "國際知名程式題庫，常用於刷題與面試準備。",
-        "logo": "https://leetcode.com/favicon.ico",
-        "website": "https://leetcode.com/",
-        "download": ""
-    },
-    {
-        "name": "APCS 能力檢測",
-        "category": "台灣學生資源",
-        "description": "教育部認可的高中資訊學科能力檢定。",
-        "logo": "https://apcs.csie.ntnu.edu.tw/wp-content/themes/APCS-201908/img/APCS.png",
-        "website": "https://apcs.csie.ntnu.edu.tw/",
-        "download": ""
-    },
-
-    {
-        "name": "APX 全國高中數理能力檢定",
-        "category": "台灣學生資源",
-        "description": "針對高中生的數理與邏輯能力檢測，強調綜合分析能力。",
-        "logo": "https://apx.stem.lasercenter.nycu.edu.tw/apx/16th/img/logo_apx.png",
-        "website": "https://apx.stem.lasercenter.nycu.edu.tw/",
-        "download": ""
-    },
-    {
-        "name": "資訊之芽 Sprout Program",
-        "category": "台灣學生資源",
-        "description": "台大資工舉辦，鼓勵高中生深入電資研究與專題發表。",
-        "logo": "https://sprout.tw/spt/index_bk1.png",
-        "website": "https://sprout.tw/spt/",
-        "download": ""
+        "name":"Taiwan Doujin Festival",
+        "category":"台灣學生資源",
+        "description":"台灣同人誌即賣會，動漫愛好者展示與交易創作的平台。",
+        "logo":"https:\/\/www.doujinfest.tw\/images\/logo.png",
+        "website":"https:\/\/www.doujinfest.tw\/",
+        "download":""
+    },
+    {
+        "name":"Computex",
+        "category":"台灣學生資源",
+        "description":"台灣國際電腦展，全球最大電腦與科技展覽，展示最新技術與產品。",
+        "logo":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/a\/ae\/Computex_Taipei_logo_since_2010.svg",
+        "website":"https:\/\/www.computextaipei.com.tw\/",
+        "download":""
+    },
+    {
+        "name":"Live2D Cubism",
+        "category":"創作工具",
+        "description":"2D角色建模與動畫製作工具，常用於VTuber虛擬形象建立。",
+        "logo":"https:\/\/www.live2d.com\/wp-content\/uploads\/2022\/02\/cubism-icon.svg",
+        "website":"https:\/\/www.live2d.com\/en\/",
+        "download":""
+    },
+    {
+        "name":"Blender",
+        "category":"創作工具",
+        "description":"開源3D建模與動畫工具，適用於動畫製作、遊戲設計與視覺特效。",
+        "logo":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/0\/0c\/Blender_logo_no_text.svg",
+        "website":"https:\/\/www.blender.org\/",
+        "download":""
+    },
+    {
+        "name":"pixiv",
+        "category":"ACGN平台與社群",
+        "description":"日本插畫、漫畫與小說創作社群，聚集大量同人與原創作品。",
+        "logo":"https:\/\/www.pixiv.net\/favicon.ico",
+        "website":"https:\/\/www.pixiv.net\/",
+        "download":""
+    },
+    {
+        "name":"DLsite",
+        "category":"ACGN平台與社群",
+        "description":"販售同人漫畫、語音作品與獨立遊戲的日本平台。",
+        "logo":"https:\/\/www.dlsite.com\/images\/web\/common\/favicon.ico",
+        "website":"https:\/\/www.dlsite.com\/",
+        "download":""
+    },
+    {
+        "name":"QuantConnect",
+        "category":"金融科技",
+        "description":"支援C#\/Python策略的雲端量化交易平台，提供歷史數據與模擬環境。",
+        "logo":"https:\/\/www.quantconnect.com\/favicon.ico",
+        "website":"https:\/\/www.quantconnect.com\/",
+        "download":""
+    },
+    {
+        "name":"TradingView",
+        "category":"金融科技",
+        "description":"提供即時金融圖表與Pine Script自訂指標，適用於技術分析與交易策略分享。",
+        "logo":"https:\/\/s3.tradingview.com\/static\/bundles\/favicon-1-140cfa03e0.ico",
+        "website":"https:\/\/www.tradingview.com\/",
+        "download":""
+    },
+    {
+        "name":"Hugging Face",
+        "category":"AI與機器學習",
+        "description":"提供Transformers與多種開源模型，支援自然語言處理與多模態應用。",
+        "logo":"https:\/\/huggingface.co\/front\/assets\/huggingface_logo-noborder.svg",
+        "website":"https:\/\/huggingface.co\/",
+        "download":""
+    },
+    {
+        "name":"Weights & Biases",
+        "category":"AI與機器學習",
+        "description":"機器學習訓練監控與實驗版本控制平台，支援PyTorch與TensorFlow。",
+        "logo":"https:\/\/wandb.ai\/favicon.ico",
+        "website":"https:\/\/wandb.ai\/",
+        "download":""
+    },
+    {
+        "name":"Vivado",
+        "category":"開發工具與環境",
+        "description":"Xilinx FPGA 設計工具，適用於數位邏輯與RTL模擬。",
+        "logo":"https:\/\/www.xilinx.com\/etc.clientlibs\/xilinx\/clientlibs\/clientlib-base\/resources\/favicon.ico",
+        "website":"https:\/\/www.xilinx.com\/products\/design-tools\/vivado.html",
+        "download":""
+    },
+    {
+        "name":"LTspice",
+        "category":"開發工具與環境",
+        "description":"Linear Technology 開發的免費SPICE電路模擬器，支援類比與混合訊號設計。",
+        "logo":"https:\/\/www.analog.com\/-\/media\/analog\/en\/product-logos\/ltspice_logo.png",
+        "website":"https:\/\/www.analog.com\/en\/design-center\/design-tools-and-calculators\/ltspice-simulator.html",
+        "download":""
+    },
+    {
+        "name":"博客來動漫館",
+        "category":"書店與通路",
+        "description":"台灣最大線上書店，漫畫與周邊商品一應俱全。",
+        "logo":"https:\/\/www.books.com.tw\/favicon.ico",
+        "website":"https:\/\/www.books.com.tw\/web\/comic\/",
+        "download":""
+    },
+    {
+        "name":"墊腳石書店",
+        "category":"書店與通路",
+        "description":"全台據點眾多，提供漫畫、輕小說與教科參考書。",
+        "logo":"https:\/\/www.tenlong.com.tw\/favicon.ico",
+        "website":"https:\/\/www.tenlong.com.tw\/",
+        "download":""
+    },
+    {
+        "name":"駿河屋（Suruga-ya）",
+        "category":"二手周邊平台",
+        "description":"日本最大二手動漫周邊販售平台，支援國際運送。",
+        "logo":"https:\/\/www.suruga-ya.jp\/favicon.ico",
+        "website":"https:\/\/www.suruga-ya.jp\/",
+        "download":""
+    },
+    {
+        "name":"K-BOOKS",
+        "category":"書店與通路",
+        "description":"秋葉原知名二手同人誌與原畫集名店。",
+        "logo":"https:\/\/www.k-books.co.jp\/favicon.ico",
+        "website":"https:\/\/www.k-books.co.jp\/",
+        "download":""
+    },
+    {
+        "name":"巴哈姆特動畫瘋",
+        "category":"ACGN平台與社群",
+        "description":"台灣合法串流平台，支援手機／網頁與彈幕功能。",
+        "logo":"https:\/\/ani.gamer.com.tw\/favicon.ico",
+        "website":"https:\/\/ani.gamer.com.tw\/",
+        "download":""
+    },
+    {
+        "name":"arXiv",
+        "category":"學術與研究資源",
+        "description":"國際開放學術預印本平台，涵蓋AI、物理、數學等。",
+        "logo":"https:\/\/arxiv.org\/favicon.ico",
+        "website":"https:\/\/arxiv.org\/",
+        "download":""
+    },
+    {
+        "name":"IEEE Xplore",
+        "category":"學術與研究資源",
+        "description":"電機資工領域最權威的期刊與會議論文資源。",
+        "logo":"https:\/\/ieeexplore.ieee.org\/assets\/img\/favicon.ico",
+        "website":"https:\/\/ieeexplore.ieee.org\/",
+        "download":""
+    },
+    {
+        "name":"LeetCode",
+        "category":"台灣學生資源",
+        "description":"國際知名程式題庫，常用於刷題與面試準備。",
+        "logo":"https:\/\/leetcode.com\/favicon.ico",
+        "website":"https:\/\/leetcode.com\/",
+        "download":""
+    },
+    {
+        "name":"APCS 能力檢測",
+        "category":"台灣學生資源",
+        "description":"教育部認可的高中資訊學科能力檢定。",
+        "logo":"https:\/\/apcs.csie.ntnu.edu.tw\/static\/favicon.ico",
+        "website":"https:\/\/apcs.csie.ntnu.edu.tw\/",
+        "download":""
+    },
+    {
+        "name":"CPE 程式能力檢定",
+        "category":"台灣學生資源",
+        "description":"大學生常見的演算法能力測驗，評估基礎與進階能力。",
+        "logo":"https:\/\/www.tcpc.me\/favicon.ico",
+        "website":"https:\/\/tcpc.me\/",
+        "download":""
+    },
+    {
+        "name":"APX 全國高中數理能力檢定",
+        "category":"台灣學生資源",
+        "description":"針對高中生的數理與邏輯能力檢測，強調綜合分析能力。",
+        "logo":"https:\/\/apx.stem.lasercenter.nycu.edu.tw\/apx\/16th\/img\/logo_apx.png",
+        "website":"https:\/\/apx.stem.lasercenter.nycu.edu.tw\/",
+        "download":""
+    },
+    {
+        "name":"資訊之芽 Sprout Program",
+        "category":"台灣學生資源",
+        "description":"台大資工舉辦，鼓勵高中生深入電資研究與專題發表。",
+        "logo":"https:\/\/sprout.tw\/spt\/index_bk1.png",
+        "website":"https:\/\/sprout.tw\/spt\/",
+        "download":""
+    },
+    {
+        "name":"Docker",
+        "category":"開發工具與環境",
+        "description":"容器化平台，可將應用程式與其依賴一同打包，確保跨平台執行一致性。",
+        "logo":"https:\/\/miro.medium.com\/v2\/resize:fit:672\/0*-fMgbzhn-rSOYEes",
+        "website":"https:\/\/www.docker.com\/",
+        "download":""
+    },
+    {
+        "name":"Kubernates",
+        "category":"開發工具與環境",
+        "description":"容器協調系統，管理 Docker 容器的自動部署、擴展與管理。",
+        "logo":"https:\/\/d1.awsstatic.com\/PAC\/kuberneteslogo.eabc6359f48c8e30b7a138c18177f3fd39338e05.png",
+        "website":"https:\/\/kubernetes.io\/",
+        "download":""
+    },
+    {
+        "name":"GitLab CI\/CD",
+        "category":"開發工具與環境",
+        "description":"整合於 GitLab 的持續整合與部署系統，用於自動化測試與發佈流程。",
+        "logo":"https:\/\/gitlab.com\/uploads\/-\/system\/project\/avatar\/30472118\/logo-extra-whitespace.png",
+        "website":"https:\/\/about.gitlab.com\/stages-devops-lifecycle\/continuous-integration\/",
+        "download":""
+    },
+    {
+        "name":"Netlify",
+        "category":"開發工具與環境",
+        "description":"前端部署平台，適合靜態網站與 JAMstack 架構，支援 Git 自動化部署。",
+        "logo":"https:\/\/static-00.iconduck.com\/assets.00\/netlify-icon-511x512-idkvcd89.png",
+        "website":"https:\/\/www.netlify.com\/",
+        "download":""
+    },
+    {
+        "name":"Vercel",
+        "category":"開發工具與環境",
+        "description":"由 Next.js 團隊打造的部署平台，主打前端框架快速上線、支援 serverless。",
+        "logo":"https:\/\/miro.medium.com\/v2\/resize:fit:1200\/1*EBHxMzmPlbvWlenxD8f8Mg.jpeg",
+        "website":"https:\/\/vercel.com\/",
+        "download":""
+    },
+    {
+        "name":"Windows Subsystem for Linux (WSL)",
+        "category":"作業系統",
+        "description":"讓 Windows 原生執行 Linux 指令與工具的子系統。",
+        "logo":"https:\/\/learn.microsoft.com\/zh-tw\/windows\/images\/wsl-icon.png",
+        "website":"https:\/\/learn.microsoft.com\/en-us\/windows\/wsl\/",
+        "download":""
+    },
+    {
+        "name":"VirtualBox",
+        "category":"作業系統",
+        "description":"開源虛擬機器平台，可在一個系統中模擬另一個作業系統。",
+        "logo":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/f\/ff\/VirtualBox_2024_Logo.svg\/1200px-VirtualBox_2024_Logo.svg.png",
+        "website":"https:\/\/www.virtualbox.org\/",
+        "download":""
+    },
+    {
+        "name":"VMware Workstation",
+        "category":"作業系統",
+        "description":"商用虛擬機器軟體，支援高效能模擬多種作業系統。",
+        "logo":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/5\/5a\/Vmware_workstation_16_icon.svg\/1200px-Vmware_workstation_16_icon.svg.png",
+        "website":"https:\/\/www.vmware.com\/products\/workstation-pro.html",
+        "download":""
+    },
+    {
+        "name":"ONNX",
+        "category":"AI與機器學習",
+        "description":"開放神經網路交換格式，用於模型跨框架部署與互操作性。",
+        "logo":"https:\/\/miro.medium.com\/v2\/resize:fit:1400\/1*B2T8bycSeIhPFooIwGf8fw.png",
+        "website":"https:\/\/onnx.ai\/",
+        "download":""
+    },
+    {
+        "name":"MLflow",
+        "category":"AI與機器學習",
+        "description":"用於機器學習專案的實驗追蹤、模型註冊與部署管理。",
+        "logo":"https:\/\/miro.medium.com\/v2\/resize:fit:1056\/1*D9b5hbQL27SQRX2iu91h6Q.png",
+        "website":"https:\/\/mlflow.org\/",
+        "download":""
+    },
+    {
+        "name":"LangChain",
+        "category":"AI與機器學習",
+        "description":"用於建構基於語言模型的應用（如RAG、對話代理等）的 Python 框架。",
+        "logo":"https:\/\/ithelp.ithome.com.tw\/upload\/images\/20240830\/20168697RmMAqaVLeL.jpg",
+        "website":"https:\/\/www.langchain.com\/",
+        "download":""
+    },
+    {
+        "name":"Android Studio",
+        "category":"開發工具與環境",
+        "description":"Google 官方 Android 開發工具，支援 Java、Kotlin。",
+        "logo":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/5\/51\/Android_Studio_Logo_2024.svg\/1200px-Android_Studio_Logo_2024.svg.png",
+        "website":"https:\/\/developer.android.com\/studio",
+        "download":""
+    },
+    {
+        "name":"Flutter",
+        "category":"開發工具與環境",
+        "description":"由 Google 推出的跨平台 UI 框架，使用 Dart 語言。",
+        "logo":"https:\/\/cdn.prod.website-files.com\/5ee12d8d7f840543bde883de\/5ef3a1148ac97166a06253c1_flutter-logo-white-inset.svg",
+        "website":"https:\/\/flutter.dev\/",
+        "download":""
+    },
+    {
+        "name":"React Native",
+        "category":"開發工具與環境",
+        "description":"使用 React 與 JavaScript 開發原生行動應用的框架。",
+        "logo":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/a\/a7\/React-icon.svg\/640px-React-icon.svg.png",
+        "website":"https:\/\/reactnative.dev\/",
+        "download":""
+    },
+    {
+        "name":"SwiftUI",
+        "category":"開發工具與環境",
+        "description":"蘋果官方的 UI 開發框架，使用 Swift 語言，支援 iOS\/macOS。",
+        "logo":"https:\/\/developer.apple.com\/assets\/elements\/icons\/swiftui\/swiftui-96x96_2x.png",
+        "website":"https:\/\/developer.apple.com\/xcode\/swiftui\/",
+        "download":""
+    },
+    {
+        "name":"Figma",
+        "category":"創作工具",
+        "description":"雲端協作式 UI 設計工具，適合多人線上原型設計與協作。",
+        "logo":"https:\/\/encrypted-tbn0.gstatic.com\/images?q=tbn:ANd9GcSoUX5LMRa7atIsNfl0nP3DaUaV4URhV0PHfA&s",
+        "website":"https:\/\/www.figma.com\/",
+        "download":""
+    },
+    {
+        "name":"Adobe XD",
+        "category":"創作工具",
+        "description":"Adobe 出品的 UI\/UX 設計與互動原型工具。",
+        "logo":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/c\/c2\/Adobe_XD_CC_icon.svg\/1200px-Adobe_XD_CC_icon.svg.png",
+        "website":"https:\/\/www.adobe.com\/products\/xd.html",
+        "download":""
+    },
+    {
+        "name":"Canva",
+        "category":"創作工具",
+        "description":"線上圖文設計平台，適合快速製作簡報、海報與社群圖卡。",
+        "logo":"https:\/\/images-eds-ssl.xboxlive.com\/image?url=4rt9.lXDC4H_93laV1_eHM0OYfiFeMI2p9MWie0CvL99U4GA1gf6_kayTt_kBblFwHwo8BW8JXlqfnYxKPmmBb8YkqrmoFjcMUJULGOJelDirX7TH.3ZYPWNtonnoVwhfzegW7Oumi.Z2oGyXd7fC4yCi0yjZC9j1On1ZhlDgi4-&format=source",
+        "website":"https:\/\/www.canva.com\/",
+        "download":""
+    },
+    {
+        "name":"MATLAB",
+        "category":"數據與科學工具",
+        "description":"商業數值計算平台，廣泛應用於工程、控制、影像與統計領域。",
+        "logo":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/2\/21\/Matlab_Logo.png",
+        "website":"https:\/\/www.mathworks.com\/products\/matlab.html",
+        "download":""
+    },
+    {
+        "name":"Octave",
+        "category":"數據與科學工具",
+        "description":"與 MATLAB 語法相容的免費替代方案，開源、跨平台。",
+        "logo":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/6\/6a\/Gnu-octave-logo.svg\/2048px-Gnu-octave-logo.svg.png",
+        "website":"https:\/\/www.gnu.org\/software\/octave\/",
+        "download":""
+    },
+    {
+        "name":"Jupyter Notebook",
+        "category":"數據與科學工具",
+        "description":"互動式筆記本，常用於 Python 資料分析與教學展示。",
+        "logo":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/3\/38\/Jupyter_logo.svg\/1200px-Jupyter_logo.svg.png",
+        "website":"https:\/\/jupyter.org\/",
+        "download":""
+    },
+    {
+        "name":"Wolfram Alpha",
+        "category":"數據與科學工具",
+        "description":"以自然語言查詢為核心的計算型知識引擎，可處理數學、統計、科學問題。",
+        "logo":"https:\/\/play-lh.googleusercontent.com\/OceHg5bH7EsTRwl-lD7jjV9WM0mpj0oH4YfA-CSbjvfa7NCLQBu5-4cLwNlDvCUp5Q4",
+        "website":"https:\/\/www.wolframalpha.com\/",
+        "download":""
+    },
+    {
+        "name":"Google Scholar",
+        "category":"數據與科學工具",
+        "description":"Google 提供的學術搜尋引擎，聚合全球期刊、論文資料。",
+        "logo":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/c\/c7\/Google_Scholar_logo.svg\/1200px-Google_Scholar_logo.svg.png",
+        "website":"https:\/\/scholar.google.com\/",
+        "download":""
+    },
+    {
+        "name":"Unity",
+        "category":"開發工具與環境",
+        "description":"跨平台遊戲開發引擎，支援 2D\/3D 遊戲與 AR\/VR。",
+        "logo":"https:\/\/sklep.itmedia.pl\/app\/uploads\/2023\/03\/Unity-Pro-logo.png.webp",
+        "website":"https:\/\/unity.com\/",
+        "download":""
+    },
+    {
+        "name":"Unreal Engine",
+        "category":"開發工具與環境",
+        "description":"由 Epic Games 推出的高擬真遊戲引擎，以 C++ 為核心。",
+        "logo":"https:\/\/encrypted-tbn0.gstatic.com\/images?q=tbn:ANd9GcTnJ_8fxMkeRrRR19x10pc6Kq5uoaWAz8Y6ww&s",
+        "website":"https:\/\/www.unrealengine.com\/",
+        "download":""
+    },
+    {
+        "name":"Wireshark",
+        "category":"數據與科學工具",
+        "description":"封包分析工具，可監控與分析網路通訊內容。",
+        "logo":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/c\/c6\/Wireshark_icon_new.png",
+        "website":"https:\/\/www.wireshark.org\/",
+        "download":""
+    },
+    {
+        "name":"Burp Suite",
+        "category":"數據與科學工具",
+        "description":"網站滲透測試與安全分析工具，常用於網頁漏洞掃描。",
+        "logo":"https:\/\/jacobriggs.io\/tools\/app\/web\/upload\/large\/3_eedab2dbcde47a63f847af0a612d1f8d.png",
+        "website":"https:\/\/portswigger.net\/burp",
+        "download":""
+    },
+    {
+        "name":"Nmap",
+        "category":"數據與科學工具",
+        "description":"網路掃描與資安偵測工具，可用於查找開放連接埠與主機資訊。",
+        "logo":"https:\/\/www.vaadata.com\/blog\/wp-content\/uploads\/2025\/05\/Nmap.png",
+        "website":"https:\/\/nmap.org\/",
+        "download":""
+    },
+    {
+        "name":"MyGO!!!!!",
+        "category":"BangDream!",
+        "description":"描寫少女們在迷惘中組團的寫實系音樂動畫作品。",
+        "logo":"https:\/\/bang-dream-gbp-en.bushiroad.com\/mygo\/assets\/images\/common\/logo_mygo.png",
+        "website":"https:\/\/anime.bang-dream.com\/mygo\/",
+        "download":""
+    },
+    {
+        "name":"Ave Mujica",
+        "category":"BangDream!",
+        "description":"以遺忘與重生為主題的暗黑系女子樂團，MyGO!!!!! 的對照團。",
+        "logo":"https:\/\/static.wikia.nocookie.net\/bandori\/images\/3\/37\/Ave_Mujica_logo.png\/revision\/latest\/scale-to-width-down\/1200?cb=20250122144511",
+        "website":"https:\/\/anime.bang-dream.com\/avemujica\/",
+        "download":""
     }
 ]
